@@ -1,0 +1,61 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/sudo:manjaro:/etc/" . "wpa_supplicant/")
+ ("/sudo:manjaro:/" . "etc/")
+ ("/etc/" . "wpa_supplicant/")
+ ("/" . "etc/")
+ ("/home/jacob/" . "programming/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jacob/programming/"
+ "/sudo:manjaro:/etc/wpa_supplicant/"
+ "/etc/wpa_supplicant/"
+ "/etc/NetworkManager/"
+ "/home/jacob/.cat_installer/"
+ "/home/jacob/Downloads/"
+ "/home/jacob/Documents/"
+ "/home/jacob/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "text.cpp"
+ "wpa_supplicant-eduroam-wifi.conf"
+ "NetworkManager.conf"
+ "ca.pem"
+ "cat_installer.conf"
+ "eduroam-linux-UoMD.py"
+ "moveList.org"
+ "config.org"
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jacob/Documents/" (23877 31516 713332 76000) "myFirst.org~" "myFirst.org" "../" "moveList.org~" "moveList.org" "./")
+
+ ("/home/jacob/.cat_installer/" (23878 58313 816592 527000) "cat_installer.conf~" "cat_installer.conf" "ca.pem" "../" "./")
+
+ ("/etc/wpa_supplicant/" (23878 58158 769928 812000) "../" "wpa_supplicant-eduroam-wifi.conf" "wpa_supplicant-eduroam-wifi.conf~" "./")
+
+ ("/home/jacob/programming/" (23879 18168 99978 390000) "../" "./")
+
+ ("/home/jacob/" (23879 18168 99978 390000) ".dmenurc" ".Xresources" ".xsession-errors" ".vim/" "Desktop/" "steam.desktop" ".config/" "Music/" ".Xauthority" ".urxvt/" ".bash_history" ".bash_logout" ".git/" ".bash_profile" ".i3/" ".inputrc" "Pictures/" ".icons/" ".bashrc" ".dmrc" ".gtkrc-2.0" ".steampid" ".mozilla/" "Documents/" ".moc/" ".steam/" ".esd_auth" ".gnupg/" "Videos/" "../" ".ssh/" "Downloads/" ".xprofile" ".cache/" ".w3m/" ".python_history" ".profile" ".emacs.d/" ".moonchild productions/" "Templates/" "Public/" ".cat_installer/" ".xsession-errors.old" ".emacs~" ".local/" ".gimp-2.8/" ".xinitrc" ".Xclients" ".tmux.conf" ".vimrc" ".lesshst" ".dir_colors" ".zprofile" "programming/" ".steampath" "./")
+
+ ("/home/jacob/.emacs.d/" (23879 18090 253313 204000) "config.org~" "init.el~" "recentf~" "smex-items" "config.el" "auto-save-list/" "../" "recentf" "elpa/" "ido.last" "init.el" "config.org" "ido.last~" "tramp" "./")
+
+ ("/etc/NetworkManager/" (23790 57667 699708 906000) "NetworkManager.conf" "system-connections/" "dnsmasq.d/" "../" "conf.d/" "dispatcher.d/" "dnsmasq-shared.d/" "./")
+
+ ("/etc/" (23878 55147 316652 746000) "bash.bash_logout" "lightdm/" "cron.daily/" "pam.d/" "pacman-mirrors.conf" "cron.monthly/" "ca-certificates/" "openswap.conf" "locale.conf" "pkcs11/" "apparmor.d/" "tmpfiles.d/" "NetworkManager/" "highlight/" "libao.conf" "gshadow-" "ifplugd/" "ImageMagick-6/" "shells" "environment" "passwd" "shadow-" "lightdm.conf.save" "netctl/" "mtab" "wgetrc" "makepkg.conf" "UPower/" "openldap/" "kernel/" "fstab" "locale.gen" "nanorc" "nginx/" "exports.d/" "manjaro-release" "xinetd.d/" "os-release" "libva.conf" "zsh/" "mkinitcpio.conf" "avahi/" "rpc" "depmod.d/" "hosts" "default/" "iptables/" "udisks2/" "arch-release" "gtk-2.0/" "systemd/" "request-key.conf" "rsyncd.conf" "ntp.conf" "pulse/" "modules-load.d/" "bash.bashrc" "resolv.conf" "i3blocks.conf" "hostname" "manjaro-firefox.ini" "mailcap" "protocols" "krb5.conf" "libblockdev/" "ssh/" "machine-id" "nscd.conf" "passwd-" "audisp/" "xdg/" "updatedb.conf" "sysctl.d/" "grub.d/" "vconsole.conf" "group" "initcpio/" "sensors3.conf" "../" "sudoers.d/" "cron.deny" "lvm/" "logrotate.conf" "gshadow" "pamac.conf" "rc_maps.cfg" "conf.d/" "manjaro-firefox-kde.ini" "ndctl/" "motd" "issue" "pacman.d/" "ld.so.conf" "fuse.conf" "topdefaultrc" "anacrontab" ".pwd.lock" "xattr.conf" "ufw/" "cifs-utils/" "cron.weekly/" "skel/" "cron.d/" "profile.d/" "nsswitch.conf" "vdpau_wrapper.cfg" "bindresvport.blacklist" "services" "i3/" "audit/" "trusted-key.key" "gtk-3.0/" "dbus-1/" "mkinitcpio.d/" "ts.conf" "iproute2/" "ImageMagick-7/" "ld.so.cache" "wpa_supplicant/" "nfs.conf" "mke2fs.conf" "e2scrub.conf" "gss/" "libnl/" "request-key.d/" "mail.rc" "pacman.conf" "vimrc" "X11/" "mpv/" "shadow" "idmapd.conf" "sensors.d/" "gai.conf" "libaudit.conf" "gssproxy/" "docx2txt.config" "modprobe.d/" "vpnc/" "asound.conf" "manjaro-firefox-developer-edition.ini" "polkit-1/" "ssl/" "cron.hourly/" "php/" "acpi/" "netconfig" "adjtime" "localtime" "profile" "i3status.conf" ".updated" "mdadm.conf" "lsb-release" "ethertypes" "ld.so.conf.d/" "man_db.conf" "dhcpcd.conf" "gconf/" "binfmt.d/" "dnsmasq.conf" "group-" "sudoers" "resolvconf.conf" "dconf/" "slsh.rc" "cpufreq-bench.conf" "login.defs" "mpd.conf" "securetty" "openvpn/" "security/" "nfsmount.conf" "alsa/" "udev/" "syslog-ng/" "exports" "crypttab" "logrotate.d/" "manjaro-thunderbird.ini" "mime.types" "fonts/" "host.conf" "rc_keymaps/" "healthd.conf" "./" "ppp/" "inputrc")
+
+ ("/home/" (23790 59527 959673 674000) "../" "jacob/" "./")
+
+ ("/home/jacob/Downloads/" (23878 54903 836657 377000) "eduroam-linux-UoMD.py" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
