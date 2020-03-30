@@ -147,14 +147,6 @@
   (setq powerline-default-seperator (quote arrow))
   (spaceline-spacemacs-theme))
 
-(use-package diminish
-  :ensure t
-  :init
-  (diminish 'which-key-mode)
-  (diminish 'beacon-mode)
-  (diminish 'subword-mode)
-  (diminish 'org-indent-mode))
-
 (use-package multiple-cursors
   :ensure t)
   (global-set-key (kbd "C->") 'mc/mark-next-like-this)
@@ -247,3 +239,11 @@
 (ad-activate 'ansi-term)
 
 (when window-system (global-hl-line-mode t))
+
+(use-package diminish
+  :ensure t
+  :init
+  (diminish 'which-key-mode)
+  (diminish 'beacon-mode)
+  (diminish 'subword-mode)
+  (diminish 'org-indent-mode))

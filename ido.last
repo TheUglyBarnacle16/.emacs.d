@@ -31,6 +31,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jacob/.emacs.d/"
  "/home/jacob/.emacs.d/plugins/yasnippet/doc/"
  "/home/jacob/"
  "/home/jacob/Documents/notes/webdev/"
@@ -57,7 +58,6 @@
  "/home/jacob/JavaProjects/"
  "/home/jacob/NetBeansProjects/ProblemSolver/test/domains/farmer/"
  "/home/jacob/NetBeansProjects/Matrix/src/matrix/"
- "/home/jacob/.emacs.d/"
  "/home/jacob/programming/"
  "/sudo:manjaro:/etc/wpa_supplicant/"
  "/etc/wpa_supplicant/"
@@ -67,6 +67,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "config.el"
  "snippet-reference.org"
  "index.org"
  "temp.html"
@@ -76,11 +77,14 @@
  "resume.tex"
  "example.html"
  "forms.html"
- "starter.html"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/jacob/.emacs.d/" (24193 24566 342816 477000) "init.el" "snippets/" ".mbsyncrc" "ido.last~" "./" "init.el~" "tramp" "config.el" "config.org" "recentf~" "recentf" "elpa/" "../" "smex-items" "config.org~" "auto-save-list/" "ido.last" ".git/")
+
+ ("/home/jacob/" (24194 5162 425061 423000) "NetBeansProjects/" ".gitconfig" ".config/" ".gnupg/" ".bashrc" ".local/" "odin_on_rails/" "WebProjects/" "netbeans-8.2/" "Desktop/" "rstudio-1.2.1578-amd64.deb" ".gradle/" ".steam/" ".gnome/" ".nbi/" ".bash_logout" "./" "SQLite/" ".rbenv/" ".bundle/" ".dbus/" ".ICEauthority" ".fretsonfire/" "Documents/" ".audacity-data/" "IdeaProjects/" "AndroidStudioProjects/" "JavaProjects/" ".Rhistory" "Android/" ".java/" ".aspell.en.pws" ".zoom/" ".netrc" ".IdeaIC2019.3/" ".fxreference.FXReference/" ".viminfo" ".minecraft/" ".pam_environment" "MIPSProjects/" "snap/" ".emulator_console_auth_token" ".pulse-cookie" ".bash_history" "R/" ".aspell.en.prepl" "../" "Pictures/" ".AndroidStudio3.5/" ".emacs.d/" "CProjects/" "Downloads/" "Steam/" "Music/" ".netbeans/" ".vscode/" ".profile" ".sudo_as_admin_successful" "Public/" ".steampid" ".rstudio-desktop/" ".mozilla/" ".steampath" ".adobe/" "Videos/" ".RData" ".gphoto/" ".pki/" ".lesshst" ".gem/" ".cache/" ".gconf/" "Templates/" ".macromedia/" ".ssh/" ".android/")
+
  ("/home/jacob/.emacs.d/plugins/yasnippet/doc/" (24193 23278 255801 659000) "snippet-expansion.org" "snippet-reference.org" "./" "snippet-development.org" "stylesheets/" "yas-doc-helper.el" "snippet-organization.org" "../" "images/" "org-setup.inc" "faq.org" "index.org" "nav-menu.html.inc" "snippet-menu.org" ".nosearch")
 
  ("/home/jacob/.emacs.d/snippets/" (24193 22591 784861 318000) "./" "../")
@@ -88,10 +92,6 @@
  ("/home/jacob/.emacs.d/plugins/yasnippet/" (24193 20865 975965 193000) ".gitignore" "./" ".travis.yml" "yasnippet.el" "Rakefile" "doc/" "yasnippet-debug.el" "yasnippet-tests.el" "../" "CONTRIBUTING.md" "NEWS" ".git/" "README.mdown" ".gitmodules")
 
  ("/home/jacob/.emacs.d/plugins/" (24193 20861 290816 513000) "./" "yasnippet/" "../")
-
- ("/home/jacob/" (24193 20549 645755 669000) "NetBeansProjects/" ".gitconfig" ".config/" ".gnupg/" ".bashrc" ".local/" "odin_on_rails/" "WebProjects/" "netbeans-8.2/" "Desktop/" "rstudio-1.2.1578-amd64.deb" ".gradle/" ".steam/" ".gnome/" ".nbi/" ".bash_logout" "./" "SQLite/" ".rbenv/" ".bundle/" ".dbus/" ".ICEauthority" ".fretsonfire/" "Documents/" ".audacity-data/" "IdeaProjects/" "AndroidStudioProjects/" "JavaProjects/" ".Rhistory" "Android/" ".java/" ".aspell.en.pws" ".zoom/" ".netrc" ".IdeaIC2019.3/" ".fxreference.FXReference/" ".viminfo" ".minecraft/" ".pam_environment" "MIPSProjects/" "snap/" ".emulator_console_auth_token" ".pulse-cookie" ".bash_history" "R/" ".aspell.en.prepl" "../" "Pictures/" ".AndroidStudio3.5/" ".emacs.d/" "CProjects/" "Downloads/" "Steam/" "Music/" ".netbeans/" ".vscode/" ".profile" ".sudo_as_admin_successful" "Public/" ".steampid" ".rstudio-desktop/" ".mozilla/" ".steampath" ".adobe/" "Videos/" ".RData" ".gphoto/" ".pki/" ".lesshst" ".gem/" ".cache/" ".gconf/" "Templates/" ".macromedia/" ".ssh/" ".android/")
-
- ("/home/jacob/.emacs.d/" (24193 23000 448850 781000) "init.el" "snippets/" ".mbsyncrc" "ido.last~" "./" "init.el~" "tramp" "config.el" "config.org" "recentf~" "recentf" "elpa/" "session.10aac83e898d6bca23157093546359125500000017780073" "../" "smex-items" "config.org~" "auto-save-list/" "ido.last" ".git/" "plugins/")
 
  ("/home/jacob/Documents/notes/webdev/" (24193 20353 702530 908000) ".#introToFrontEnd.org" "./" "../")
 
