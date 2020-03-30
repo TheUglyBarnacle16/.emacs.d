@@ -35,7 +35,7 @@
  '(jdee-db-spec-breakpoint-face-colors (cons "#1E2029" "#565761"))
  '(package-selected-packages
    (quote
-    (irony company-irony pretty-mode expand-region multiple-cursors swiper popup-kill-ring doom-modeline symon diminish spaceline company dashboard sudo-edit free-keys switch-window rainbow-mode avy smex ido-vertical-mode org-bullets beacon spacemacs-theme doom-themes zenburn-theme auctex which-key)))
+    (yasnippet-snippets yasnippet irony company-irony pretty-mode expand-region multiple-cursors swiper popup-kill-ring doom-modeline symon diminish spaceline company dashboard sudo-edit free-keys switch-window rainbow-mode avy smex ido-vertical-mode org-bullets beacon spacemacs-theme doom-themes zenburn-theme auctex which-key)))
  '(vc-annotate-background "#282a36")
  '(vc-annotate-color-map
    (list

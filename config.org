@@ -134,7 +134,7 @@
    #+BEGIN_SRC emacs-lisp
      (setq make-backup-file nil)
      (setq auto-save-default nil)
-   #+END_SRC 
+   #+END_SRC
 ** Bell
    #+BEGIN_SRC emacs-lisp
      (setq ring-bell-function 'ignore)
@@ -166,15 +166,6 @@
 ** Mouse yank at point
    #+BEGIN_SRC emacs-lisp
    (setq-default mouse-yank-at-pint t)
-   #+END_SRC
-** Pretty Symbols
-   #+BEGIN_SRC emacs-lisp
-   (when window-system (global-prettify-symbols-mode t))
-   (when window-system
-         (use-package pretty-mode
-         :ensure t
-         :config
-         (add-hook 'prog-mode-hook 'pretty-mode)))
    #+END_SRC
 ** Remove Bars
    #+BEGIN_SRC emacs-lisp
@@ -288,6 +279,15 @@
       '((sequence "TODO" "PROGRESS" "DONE")))
    #+END_SRC
 * Packages
+** Archives
+#+BEGIN_SRC emacs-lisp
+(require 'package)
+(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
+                    (not (gnutls-available-p))))
+       (proto (if no-ssl "http" "https")))
+  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t))
+(package-initialize)
+#+END_SRC
 ** Beacon
   #+BEGIN_SRC emacs-lisp
   (use-package beacon
@@ -319,6 +319,18 @@
      :init
      (which-key-mode))
    #+END_SRC
+** Yasnippet
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-reload-all)
+#+END_SRC
+*** snippets
+#+BEGIN_SRC emacs-lisp
+(use-package yasnippet-snippets
+  :ensure t)
+#+END_SRC
 * Sudo-Edit
   #+BEGIN_SRC emacs-lisp
     (use-package sudo-edit

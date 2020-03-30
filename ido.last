@@ -2,59 +2,192 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/jacob/.emacs.d/plugins/" . "yasnippet/")
+ ("/home/jacob/WebProjects/odin/" . "Rock-Paper-Scissors/")
+ ("/home/jacob/WebProjects/steele/hw3/" . "TodaysHW/")
+ ("/home/jacob/WebProjects/steele/" . "hw4/")
+ ("/home/jacob/WebProjects/" . "odin/")
+ ("/home/jacob/Downloads/" . "refman/")
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/main/res/" . "layout/")
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/main/" . "res/")
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/" . "main/")
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/" . "src/")
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/" . "app/")
+ ("/home/jacob/AndroidStudioProjects/" . "ProblemSolver/")
+ ("/home/jacob/CProjects/" . "c++/")
+ ("/home/jacob/NetBeansProjects/ProblemSolver/test/domains/" . "farmer/")
+ ("/home/jacob/NetBeansProjects/ProblemSolver/test/" . "domains/")
+ ("/home/jacob/NetBeansProjects/ProblemSolver/" . "test/")
+ ("/home/jacob/NetBeansProjects/Matrix/" . "src/")
+ ("/home/jacob/NetBeansProjects/" . "ProblemSolver/")
+ ("/home/jacob/Documents/notes/" . "bio2/")
+ ("/home/jacob/Documents/" . "notes/")
  ("/sudo:manjaro:/etc/" . "wpa_supplicant/")
  ("/sudo:manjaro:/" . "etc/")
  ("/etc/" . "wpa_supplicant/")
  ("/" . "etc/")
- ("/home/jacob/" . "programming/")
+ ("/home/jacob/" . "WebProjects/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jacob/.emacs.d/plugins/yasnippet/doc/"
+ "/home/jacob/"
+ "/home/jacob/Documents/notes/webdev/"
+ "/home/jacob/WebProjects/odin/Rock-Paper-Scissors/"
+ "/home/jacob/Documents/notes/"
+ "/home/jacob/Documents/resume/"
+ "/home/jacob/WebProjects/odin/"
+ "/home/jacob/WebProjects/odin/google-homepage/"
+ "/home/jacob/WebProjects/steele/hw4/"
+ "/home/jacob/WebProjects/steele/hw3/TodaysHW/"
+ "/home/jacob/WebProjects/steele/hw2/"
+ "/home/jacob/Documents/notes/bio2/"
+ "/home/jacob/Documents/notes/bio1/"
+ "/home/jacob/WebProjects/"
+ "/home/jacob/Downloads/"
+ "/home/jacob/Documents/instructions/"
+ "/home/jacob/Documents/"
+ "/home/jacob/CProjects/c++/"
+ "/home/jacob/Android/"
+ "/home/jacob/Downloads/refman/"
+ "/home/jacob/Documents/notes/swdesign/"
+ "/home/jacob/Documents/notes/it/"
+ "/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/main/res/layout/"
+ "/home/jacob/JavaProjects/"
+ "/home/jacob/NetBeansProjects/ProblemSolver/test/domains/farmer/"
+ "/home/jacob/NetBeansProjects/Matrix/src/matrix/"
+ "/home/jacob/.emacs.d/"
  "/home/jacob/programming/"
  "/sudo:manjaro:/etc/wpa_supplicant/"
  "/etc/wpa_supplicant/"
  "/etc/NetworkManager/"
  "/home/jacob/.cat_installer/"
- "/home/jacob/Downloads/"
- "/home/jacob/Documents/"
- "/home/jacob/.emacs.d/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "text.cpp"
- "wpa_supplicant-eduroam-wifi.conf"
- "NetworkManager.conf"
- "ca.pem"
- "cat_installer.conf"
- "eduroam-linux-UoMD.py"
- "moveList.org"
- "config.org"
- "init.el"
+ "snippet-reference.org"
+ "index.org"
+ "temp.html"
+ "introToFrontEnd.org"
+ "index.html"
+ "gitcheat.org"
+ "resume.tex"
+ "example.html"
+ "forms.html"
+ "starter.html"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jacob/Documents/" (23877 31516 713332 76000) "myFirst.org~" "myFirst.org" "../" "moveList.org~" "moveList.org" "./")
+ ("/home/jacob/.emacs.d/plugins/yasnippet/doc/" (24193 23278 255801 659000) "snippet-expansion.org" "snippet-reference.org" "./" "snippet-development.org" "stylesheets/" "yas-doc-helper.el" "snippet-organization.org" "../" "images/" "org-setup.inc" "faq.org" "index.org" "nav-menu.html.inc" "snippet-menu.org" ".nosearch")
+
+ ("/home/jacob/.emacs.d/snippets/" (24193 22591 784861 318000) "./" "../")
+
+ ("/home/jacob/.emacs.d/plugins/yasnippet/" (24193 20865 975965 193000) ".gitignore" "./" ".travis.yml" "yasnippet.el" "Rakefile" "doc/" "yasnippet-debug.el" "yasnippet-tests.el" "../" "CONTRIBUTING.md" "NEWS" ".git/" "README.mdown" ".gitmodules")
+
+ ("/home/jacob/.emacs.d/plugins/" (24193 20861 290816 513000) "./" "yasnippet/" "../")
+
+ ("/home/jacob/" (24193 20549 645755 669000) "NetBeansProjects/" ".gitconfig" ".config/" ".gnupg/" ".bashrc" ".local/" "odin_on_rails/" "WebProjects/" "netbeans-8.2/" "Desktop/" "rstudio-1.2.1578-amd64.deb" ".gradle/" ".steam/" ".gnome/" ".nbi/" ".bash_logout" "./" "SQLite/" ".rbenv/" ".bundle/" ".dbus/" ".ICEauthority" ".fretsonfire/" "Documents/" ".audacity-data/" "IdeaProjects/" "AndroidStudioProjects/" "JavaProjects/" ".Rhistory" "Android/" ".java/" ".aspell.en.pws" ".zoom/" ".netrc" ".IdeaIC2019.3/" ".fxreference.FXReference/" ".viminfo" ".minecraft/" ".pam_environment" "MIPSProjects/" "snap/" ".emulator_console_auth_token" ".pulse-cookie" ".bash_history" "R/" ".aspell.en.prepl" "../" "Pictures/" ".AndroidStudio3.5/" ".emacs.d/" "CProjects/" "Downloads/" "Steam/" "Music/" ".netbeans/" ".vscode/" ".profile" ".sudo_as_admin_successful" "Public/" ".steampid" ".rstudio-desktop/" ".mozilla/" ".steampath" ".adobe/" "Videos/" ".RData" ".gphoto/" ".pki/" ".lesshst" ".gem/" ".cache/" ".gconf/" "Templates/" ".macromedia/" ".ssh/" ".android/")
+
+ ("/home/jacob/.emacs.d/" (24193 23000 448850 781000) "init.el" "snippets/" ".mbsyncrc" "ido.last~" "./" "init.el~" "tramp" "config.el" "config.org" "recentf~" "recentf" "elpa/" "session.10aac83e898d6bca23157093546359125500000017780073" "../" "smex-items" "config.org~" "auto-save-list/" "ido.last" ".git/" "plugins/")
+
+ ("/home/jacob/Documents/notes/webdev/" (24193 20353 702530 908000) ".#introToFrontEnd.org" "./" "../")
+
+ ("/home/jacob/Downloads/" (24190 25328 44961 632000) "SSR_TSRPT.pdf" "Regression_HW1.pdf" "copiers.txt" "Resume3(1).pdf" "Memo #2 Guidelines-1.docx" "Face_Recognition_in_Mobile_Devices.pdf" "Econ 3821 Take Home Test.docx" "syllabus.docx" "meeting-895119567.ics" "quiz_06_solutions.pdf" "idea-IC-193.5233.102/" "peerReview.pdf" "./" "hw.txt" "McCormick_Jacob_quiz6.pdf" "meeting-733075694.ics" "SSR_TSRPT(1).pdf" "usr/" "HW 6.docx" ".Rhistory" "IMG_20190920_164946.jpg" "IMG_20200214_121946.jpg" "CS2521_M2_Practice_Questions.pdf" "Technical Description Rubric-1.docx" "Annotated Bibliography Entry Examples.docx" "Snow Removal.pdf" "Article PDF for Reverse Engineering Assignment.pdf" "Lab 4.pdf" "R_Inference_about_slope.docx" "HW 4.docx" "Exercise 1 - Normal Equations in R.Rmd" "Brick Builder(1).pdf" "Memo #2 Guidelines-1 (1).docx" "Lab 6.pdf" "WRIT 3130 Group Lists S20.docx" "Self-Driving Cars.docx" "Mars.jar" "refman.zip" "../" "1to1schedule.pdf" "Memos 3 and 5 Performance Review Scales.pdf" "Summer 2020 Co-Op Requests_Master Spreadsheet.xlsx" "Resume3.pdf" "R_basic_regression_operations.docx" "example1.txt" "Karnaugh Map Rules.docx" "refman/" "Lab 5.pdf" "CS2521_M3_Solutions_Fall_2019.docx" "emacs-htmlize-master/" "Resume2.pdf" "zoom_amd64.deb" "Summer 2020 Received Project Requests.zip" "Brick Builder.pdf" "Jacob-McCormick.zip" ".RData" "t-test template-1(1).xlsx" "ideaIC-2019.3.tar.gz" "Stapes, Confusion Orchestrator.png")
+
+ ("/home/jacob/Documents/notes/bio2/" (24192 54905 419047 71000) "33Chapter.org~" "28Chapter.org" "34Chapter.org" "23Chapter.org" "41Chapter.org~" "27Chapter.org" "./" "26Chapter.org" "44Chapter.org" "28Chapter.org~" "23Chapter.org~" "27Chapter.org~" "41Chapter.org" "44Chapter.org~" "34Chapter.org~" "40Chapter.org" "39Chapter.org" "../" "29Chapter.org" "29Chapter.org~" "39Chapter.org~" "42Chapter.org" "42Chapter.org~" "40Chapter.org~" "26Chapter.org~" "33Chapter.org")
+
+ ("/home/jacob/WebProjects/steele/hw2/" (24190 13144 356315 131000) "./" "index.html" "index.html~" "../" "Day2/")
+
+ ("/home/jacob/WebProjects/steele/hw3/TodaysHW/" (24190 24985 333971 170000) "starter.html" "table.css" "./" "starter.html~" "../" "FinishedTableScreenshot.png")
+
+ ("/home/jacob/WebProjects/odin/google-homepage/" (24190 47756 237728 731000) "./" "index.html" "index.html~" "README.md" "../" ".git/")
+
+ ("/home/jacob/WebProjects/odin/Rock-Paper-Scissors/" (24192 52512 312718 105000) ".gitignore" "./" "index.html" "index.html~" "../" ".git/")
+
+ ("/home/jacob/WebProjects/odin/" (24192 47897 827131 269000) "./" "../" "videos" "google-homepage/" "Rock-Paper-Scissors/")
+
+ ("/home/jacob/Documents/resume/" (24191 56206 941422 711000) "./" "resume.tex" "resume.aux" "resume.log" "../")
+
+ ("/home/jacob/WebProjects/steele/hw4/" (24190 25368 985614 651000) "./" "../" "forms.html")
+
+ ("/home/jacob/WebProjects/steele/" (24190 25348 785296 223000) "hw2/" "./" "hw3/" "hw1/" "../" "hw4/")
+
+ ("/home/jacob/WebProjects/steele/hw3/" (24190 23666 228850 790000) "tables.html" "./" "TodaysHW/" "../")
+
+ ("/home/jacob/Documents/" (24189 10706 135430 381000) "data2.txt" "bethelscholarshipapp.docx" "HW 6.odt" "data3.txt" "stats.ms" "instructions/" "./" "techdoc.tex" "HW10-Part-7.pdf" "Jacob-McCormick.docx" "OrgExamReview.odt" "classes.org~" "SLR-1.Rmd" "Lab5.circ" "bethelscholarshipapp.odt" "Lab6.circ" "AnnotatedBib.odt" "data1.txt" "SLR-1.pdf" "classes.org" "../" "AnnotatedBib.docx" "notes/" "resume/" "stats.pdf" "Ch10Comp.pdf" "HW10-Part-7.Rmd" "stats.ms~")
+
+ ("/home/jacob/WebProjects/" (24186 14472 384090 345000) "steele/" "./" "../" "odin/")
+
+ ("/home/jacob/Documents/notes/" (24183 32542 122732 912000) "./" "bio1/" "swdesign/" "bio2/" ".#temp.org" "gitcheat.org" "../" "it/" "gitcheat.org~" "prob/")
+
+ ("/home/jacob/Documents/instructions/" (24141 43271 677695 214000) "example.aux" "caddy1.jpg" "caddyscrew.jpg" "driveslide.jpg" "hidden.jpg" "25start.jpg" "drivesection.jpg" "example.log" "wrong.jpg" "25drive.jpg" "motherboard.jpg" "./" "example.blg" "ref.bib" "example.toc" "drivepreslide.jpg" "example.pdf" "RAM.jpg" "screws.jpg" "caddy2.jpg" "example.tex.bak" "drivecomparison.jpg" "../" "example.tex" "25startscrew.jpg" "example.bcf" "right.jpg" "m2.jpg" "base.jpg" "example.tex~" "example.run.xml" "screwflap.jpg" "tools.jpg" "spudger.jpg" "ref.bib~" "example.bbl" "strip.jpg")
+
+ ("/home/jacob/CProjects/c++/" (24136 34110 391354 327000) "Card.h" "./" "../")
+
+ ("/etc/NetworkManager/" (24133 27322 403438 793000) "dnsmasq-shared.d/" "./" "dispatcher.d/" "system-connections/" "conf.d/" "../" "NetworkManager.conf" "dnsmasq.d/")
+
+ ("/home/jacob/MIPSProjects/" (24125 61536 733176 570000) "Lab3.asm" "./" "HW2-2b.asm" "HW2-2a.asm" "HW2-1a.asm" "Lab2.asm" "Lab1.asm" "../" "HW2-1b.asm")
+
+ ("/home/jacob/NetBeansProjects/" (24041 58466 203476 679000) "Matrix/" "./" "Circles/" "BinaryHeap/" "Threads/" "ProblemSolver/" "../" "Calculator/" "JSProblemSolver.zip" "Console/" "JSProblemSolver/")
+
+ ("/home/jacob/Android/" (24010 62311 219919 704000) "./" "Sdk/" "../")
+
+ ("/home/jacob/Downloads/refman/" (18599 11966 0 0) "layout_e.tex" "lay_e2.tex" "./" "layout_d.tex" "layout_e.pdf" "pagepc.sty" "00Contents" "layout_d.pdf" "../" "lay_d2.tex" "refman.dtx" "refman.upl" "refman.pdf" "refman.ins")
+
+ ("/home/jacob/Documents/notes/it/" (24046 42969 13735 47000) "5Chapter.org" "13Chapter.org" "./" "15Chapter.org" "15Chapter.org~" "5Chapter.org~" "1Chapter.org~" "16Chapter.org" "14Chapter.org~" "../" "16Chapter.org~" "13Chapter.org~" "1Chapter.org" "14Chapter.org")
+
+ ("/home/jacob/Documents/notes/bio1/" (24047 44864 608325 982000) "1Exam.org" "6Chapter.org" "17Chapter.org~" "5Chapter.org" "23Chapter.org" "2Exam.org" "17Chapter.org" "./" "15Chapter.org" "8Chapter.org" "15Chapter.org~" "12Chapter.org" "11Chapter.org" "21Chapter.org" "16Chapter.org" "14Chapter.org~" "10Chapter.org" "11Chapter.org~" "1Exam.html" "../" "4Chapter.org" "18Chapter.org" "2Chapter.org" "7Chapter.org" "21Chapter.org~" "1Chapter.org" "3Chapter.org" "14Chapter.org")
+
+ ("/home/jacob/Documents/notes/swdesign/" (24049 23272 204062 136000) "HashTables.org~" "lambdaEx.java" "frameworks.org~" "java8.html" "jQuery.org" "javaFX.org~" "./" "JavaScript.org~" "multiThreading.org~" "introToJava.org~" "JavaScript.org" "Final.org" "java8.html~" "javaFX.org" "abstract.org" "java8.org" "oodesign.org" "HashTables.org" "multiThreading.html" "../" "Android.org" "Android.org~" "introToJava.org" "Graphs.org~" "multiThreading.org" "Lab3Notes.org" "abstract.org~" "Final.org~" "lambdaEx.java~" "Graphs.org" "frameworks.org" "java8.org~")
+
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/main/res/layout/" (24040 13106 244706 131000) "./" "activity_puzzle_play_area.xml" "activity_display_puzzle_rules.xml" "activity_main.xml" "../" "activity_farmer_play_area.xml" "activity_display_farmer_rules.xml")
+
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/main/res/" (24021 46196 774570 674000) "mipmap-xhdpi/" "layout/" "./" "drawable/" "mipmap-xxhdpi/" "mipmap-hdpi/" "../" "values/" "mipmap-xxxhdpi/" "drawable-v24/" "mipmap-anydpi-v26/" "mipmap-mdpi/")
+
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/main/" (24024 21924 88268 1000) "./" "AndroidManifest.xml" "res/" "java/" "../")
+
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/" (24021 46196 554552 237000) "test/" "./" "main/" "androidTest/" "../")
+
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/build/" (24021 61418 975062 937000) "outputs/" "./" "generated/" "intermediates/" "../" "tmp/")
+
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/" (24021 61480 844387 573000) "build/" ".gitignore" "./" "proguard-rules.pro" "build.gradle" "../" "libs/" "src/" "app.iml")
+
+ ("/home/jacob/AndroidStudioProjects/ProblemSolver/" (24021 49784 974973 556000) ".gitignore" ".gradle/" "./" "app/" "gradle/" "build.gradle" "gradlew" "gradlew.bat" "../" "gradle.properties" "Problem Solver.iml" "local.properties" ".idea/" "settings.gradle")
+
+ ("/home/jacob/AndroidStudioProjects/" (24021 46195 694479 869000) "./" "MyFirstApp/" "ProblemSolver/" "../")
+
+ ("/home/jacob/JavaProjects/" (24002 18139 900028 509000) "ddcalc.class" "cc1.class" "./" "fib.java" "cc2.java" "ddcalc.java~" "ddcalc.java" "cc1.java" "cc1.java~" "fib.class" "../" "cc2.class" "cc2.java~")
+
+ ("/etc/wpa_supplicant/" (23995 9921 913777 86000) "./" "ifupdown.sh" "functions.sh" "../" "action_wpa.sh")
+
+ ("/home/jacob/NetBeansProjects/ProblemSolver/test/domains/farmer/" (23984 47512 140520 903000) "FarmerGraphTest.java" "./" "FarmerProblemTest.java" "../" "FarmerStateTest.java" "FarmerMoverTest.java")
+
+ ("/home/jacob/CProjects/" (23966 34158 762222 625000) "./" "c++/" "../")
+
+ ("/home/jacob/NetBeansProjects/ProblemSolver/test/domains/" (23966 15157 735368 874000) "./" "arithmetic/" "../" "farmer/")
+
+ ("/home/jacob/NetBeansProjects/ProblemSolver/test/" (23945 16092 681803 917000) "./" "domains/" "../")
+
+ ("/home/jacob/NetBeansProjects/ProblemSolver/" (23965 4526 272229 299000) "build/" "build.xml" "manifest.mf" "test/" "./" "nbproject/" "src.zip" "../" "src/")
+
+ ("/home/jacob/NetBeansProjects/Matrix/src/matrix/" (23097 22702 0 0) "MatrixException.java" "./" "Matrix.java" "../" "AbstractMatrix.java" "ArrayImplementation.java" "ArrayListImplementation.java")
+
+ ("/home/jacob/NetBeansProjects/Matrix/src/" (23096 19161 0 0) "./" "gui/" "../" "matrix/")
+
+ ("/home/jacob/NetBeansProjects/Matrix/" (23918 61001 461850 774000) "build/" "build.xml" "manifest.mf" "test/" "./" "nbproject/" "../" "src/")
+
+ ("/home/jacob/Documents/notes/prob/" (23910 46112 890723 191000) "./" "../")
 
  ("/home/jacob/.cat_installer/" (23878 58313 816592 527000) "cat_installer.conf~" "cat_installer.conf" "ca.pem" "../" "./")
 
- ("/etc/wpa_supplicant/" (23878 58158 769928 812000) "../" "wpa_supplicant-eduroam-wifi.conf" "wpa_supplicant-eduroam-wifi.conf~" "./")
-
  ("/home/jacob/programming/" (23879 18168 99978 390000) "../" "./")
-
- ("/home/jacob/" (23879 18168 99978 390000) ".dmenurc" ".Xresources" ".xsession-errors" ".vim/" "Desktop/" "steam.desktop" ".config/" "Music/" ".Xauthority" ".urxvt/" ".bash_history" ".bash_logout" ".git/" ".bash_profile" ".i3/" ".inputrc" "Pictures/" ".icons/" ".bashrc" ".dmrc" ".gtkrc-2.0" ".steampid" ".mozilla/" "Documents/" ".moc/" ".steam/" ".esd_auth" ".gnupg/" "Videos/" "../" ".ssh/" "Downloads/" ".xprofile" ".cache/" ".w3m/" ".python_history" ".profile" ".emacs.d/" ".moonchild productions/" "Templates/" "Public/" ".cat_installer/" ".xsession-errors.old" ".emacs~" ".local/" ".gimp-2.8/" ".xinitrc" ".Xclients" ".tmux.conf" ".vimrc" ".lesshst" ".dir_colors" ".zprofile" "programming/" ".steampath" "./")
-
- ("/home/jacob/.emacs.d/" (23879 18090 253313 204000) "config.org~" "init.el~" "recentf~" "smex-items" "config.el" "auto-save-list/" "../" "recentf" "elpa/" "ido.last" "init.el" "config.org" "ido.last~" "tramp" "./")
-
- ("/etc/NetworkManager/" (23790 57667 699708 906000) "NetworkManager.conf" "system-connections/" "dnsmasq.d/" "../" "conf.d/" "dispatcher.d/" "dnsmasq-shared.d/" "./")
 
  ("/etc/" (23878 55147 316652 746000) "bash.bash_logout" "lightdm/" "cron.daily/" "pam.d/" "pacman-mirrors.conf" "cron.monthly/" "ca-certificates/" "openswap.conf" "locale.conf" "pkcs11/" "apparmor.d/" "tmpfiles.d/" "NetworkManager/" "highlight/" "libao.conf" "gshadow-" "ifplugd/" "ImageMagick-6/" "shells" "environment" "passwd" "shadow-" "lightdm.conf.save" "netctl/" "mtab" "wgetrc" "makepkg.conf" "UPower/" "openldap/" "kernel/" "fstab" "locale.gen" "nanorc" "nginx/" "exports.d/" "manjaro-release" "xinetd.d/" "os-release" "libva.conf" "zsh/" "mkinitcpio.conf" "avahi/" "rpc" "depmod.d/" "hosts" "default/" "iptables/" "udisks2/" "arch-release" "gtk-2.0/" "systemd/" "request-key.conf" "rsyncd.conf" "ntp.conf" "pulse/" "modules-load.d/" "bash.bashrc" "resolv.conf" "i3blocks.conf" "hostname" "manjaro-firefox.ini" "mailcap" "protocols" "krb5.conf" "libblockdev/" "ssh/" "machine-id" "nscd.conf" "passwd-" "audisp/" "xdg/" "updatedb.conf" "sysctl.d/" "grub.d/" "vconsole.conf" "group" "initcpio/" "sensors3.conf" "../" "sudoers.d/" "cron.deny" "lvm/" "logrotate.conf" "gshadow" "pamac.conf" "rc_maps.cfg" "conf.d/" "manjaro-firefox-kde.ini" "ndctl/" "motd" "issue" "pacman.d/" "ld.so.conf" "fuse.conf" "topdefaultrc" "anacrontab" ".pwd.lock" "xattr.conf" "ufw/" "cifs-utils/" "cron.weekly/" "skel/" "cron.d/" "profile.d/" "nsswitch.conf" "vdpau_wrapper.cfg" "bindresvport.blacklist" "services" "i3/" "audit/" "trusted-key.key" "gtk-3.0/" "dbus-1/" "mkinitcpio.d/" "ts.conf" "iproute2/" "ImageMagick-7/" "ld.so.cache" "wpa_supplicant/" "nfs.conf" "mke2fs.conf" "e2scrub.conf" "gss/" "libnl/" "request-key.d/" "mail.rc" "pacman.conf" "vimrc" "X11/" "mpv/" "shadow" "idmapd.conf" "sensors.d/" "gai.conf" "libaudit.conf" "gssproxy/" "docx2txt.config" "modprobe.d/" "vpnc/" "asound.conf" "manjaro-firefox-developer-edition.ini" "polkit-1/" "ssl/" "cron.hourly/" "php/" "acpi/" "netconfig" "adjtime" "localtime" "profile" "i3status.conf" ".updated" "mdadm.conf" "lsb-release" "ethertypes" "ld.so.conf.d/" "man_db.conf" "dhcpcd.conf" "gconf/" "binfmt.d/" "dnsmasq.conf" "group-" "sudoers" "resolvconf.conf" "dconf/" "slsh.rc" "cpufreq-bench.conf" "login.defs" "mpd.conf" "securetty" "openvpn/" "security/" "nfsmount.conf" "alsa/" "udev/" "syslog-ng/" "exports" "crypttab" "logrotate.d/" "manjaro-thunderbird.ini" "mime.types" "fonts/" "host.conf" "rc_keymaps/" "healthd.conf" "./" "ppp/" "inputrc")
 
  ("/home/" (23790 59527 959673 674000) "../" "jacob/" "./")
-
- ("/home/jacob/Downloads/" (23878 54903 836657 377000) "eduroam-linux-UoMD.py" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

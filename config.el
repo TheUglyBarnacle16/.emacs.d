@@ -118,13 +118,6 @@
 
 (setq-default mouse-yank-at-pint t)
 
-(when window-system (global-prettify-symbols-mode t))
-(when window-system
-      (use-package pretty-mode
-      :ensure t
-      :config
-      (add-hook 'prog-mode-hook 'pretty-mode)))
-
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -193,6 +186,13 @@
 (setq org-todo-keywords
    '((sequence "TODO" "PROGRESS" "DONE")))
 
+(require 'package)
+(let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
+                    (not (gnutls-available-p))))
+       (proto (if no-ssl "http" "https")))
+  (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t))
+(package-initialize)
+
 (use-package beacon
   :ensure t
   :init
@@ -213,6 +213,14 @@
   :ensure t
   :init
   (which-key-mode))
+
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-reload-all)
+
+(use-package yasnippet-snippets
+  :ensure t)
 
 (use-package sudo-edit
   :ensure t

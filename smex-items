@@ -1,16 +1,28 @@
 
 ;; ----- smex-history -----
 (
- symon-mode
- cd
- 5x5
- arp
- dbx
- dig
- erc
+ htmlize-file
+ minimize-window
+ shell
+ backward-sentence
+ forward-sentence
+ list-packages
+ ansi-term
 )
 
 ;; ----- smex-data -----
 (
  (symon-mode . 2)
+ (list-packages . 3)
+ (clipboard-yank . 1)
+ (shell . 20)
+ (dired . 4)
+ (whitespace-mode . 1)
+ (htmlize-file . 4)
+ (dired-mark . 1)
+ (load-file . 1)
+ (ansi-term . 1)
+ (minimize-window . 12)
+ (forward-sentence . 2)
+ (backward-sentence . 1)
 )
