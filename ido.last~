@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/jacob/.emacs.d/plugins/" . "yasnippet/")
  ("/home/jacob/WebProjects/odin/" . "Rock-Paper-Scissors/")
  ("/home/jacob/WebProjects/steele/hw3/" . "TodaysHW/")
  ("/home/jacob/WebProjects/steele/" . "hw4/")
@@ -30,6 +31,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jacob/.emacs.d/plugins/yasnippet/doc/"
+ "/home/jacob/"
+ "/home/jacob/Documents/notes/webdev/"
  "/home/jacob/WebProjects/odin/Rock-Paper-Scissors/"
  "/home/jacob/Documents/notes/"
  "/home/jacob/Documents/resume/"
@@ -45,7 +49,6 @@
  "/home/jacob/Documents/instructions/"
  "/home/jacob/Documents/"
  "/home/jacob/CProjects/c++/"
- "/home/jacob/"
  "/home/jacob/Android/"
  "/home/jacob/Downloads/refman/"
  "/home/jacob/Documents/notes/swdesign/"
@@ -64,47 +67,57 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "snippet-reference.org"
+ "index.org"
+ "temp.html"
+ "introToFrontEnd.org"
  "index.html"
  "gitcheat.org"
  "resume.tex"
  "example.html"
  "forms.html"
  "starter.html"
- "29Chapter.org"
- "33Chapter.org"
- "1Exam.org"
- "1Exam.html"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jacob/WebProjects/odin/Rock-Paper-Scissors/" (24192 50688 973104 474000) "./" "index.html" "index.html~" "../" ".git/")
+ ("/home/jacob/.emacs.d/plugins/yasnippet/doc/" (24193 23278 255801 659000) "snippet-expansion.org" "snippet-reference.org" "./" "snippet-development.org" "stylesheets/" "yas-doc-helper.el" "snippet-organization.org" "../" "images/" "org-setup.inc" "faq.org" "index.org" "nav-menu.html.inc" "snippet-menu.org" ".nosearch")
+
+ ("/home/jacob/.emacs.d/snippets/" (24193 22591 784861 318000) "./" "../")
+
+ ("/home/jacob/.emacs.d/plugins/yasnippet/" (24193 20865 975965 193000) ".gitignore" "./" ".travis.yml" "yasnippet.el" "Rakefile" "doc/" "yasnippet-debug.el" "yasnippet-tests.el" "../" "CONTRIBUTING.md" "NEWS" ".git/" "README.mdown" ".gitmodules")
+
+ ("/home/jacob/.emacs.d/plugins/" (24193 20861 290816 513000) "./" "yasnippet/" "../")
+
+ ("/home/jacob/" (24193 20549 645755 669000) "NetBeansProjects/" ".gitconfig" ".config/" ".gnupg/" ".bashrc" ".local/" "odin_on_rails/" "WebProjects/" "netbeans-8.2/" "Desktop/" "rstudio-1.2.1578-amd64.deb" ".gradle/" ".steam/" ".gnome/" ".nbi/" ".bash_logout" "./" "SQLite/" ".rbenv/" ".bundle/" ".dbus/" ".ICEauthority" ".fretsonfire/" "Documents/" ".audacity-data/" "IdeaProjects/" "AndroidStudioProjects/" "JavaProjects/" ".Rhistory" "Android/" ".java/" ".aspell.en.pws" ".zoom/" ".netrc" ".IdeaIC2019.3/" ".fxreference.FXReference/" ".viminfo" ".minecraft/" ".pam_environment" "MIPSProjects/" "snap/" ".emulator_console_auth_token" ".pulse-cookie" ".bash_history" "R/" ".aspell.en.prepl" "../" "Pictures/" ".AndroidStudio3.5/" ".emacs.d/" "CProjects/" "Downloads/" "Steam/" "Music/" ".netbeans/" ".vscode/" ".profile" ".sudo_as_admin_successful" "Public/" ".steampid" ".rstudio-desktop/" ".mozilla/" ".steampath" ".adobe/" "Videos/" ".RData" ".gphoto/" ".pki/" ".lesshst" ".gem/" ".cache/" ".gconf/" "Templates/" ".macromedia/" ".ssh/" ".android/")
+
+ ("/home/jacob/.emacs.d/" (24193 23000 448850 781000) "init.el" "snippets/" ".mbsyncrc" "ido.last~" "./" "init.el~" "tramp" "config.el" "config.org" "recentf~" "recentf" "elpa/" "session.10aac83e898d6bca23157093546359125500000017780073" "../" "smex-items" "config.org~" "auto-save-list/" "ido.last" ".git/" "plugins/")
+
+ ("/home/jacob/Documents/notes/webdev/" (24193 20353 702530 908000) ".#introToFrontEnd.org" "./" "../")
+
+ ("/home/jacob/Downloads/" (24190 25328 44961 632000) "SSR_TSRPT.pdf" "Regression_HW1.pdf" "copiers.txt" "Resume3(1).pdf" "Memo #2 Guidelines-1.docx" "Face_Recognition_in_Mobile_Devices.pdf" "Econ 3821 Take Home Test.docx" "syllabus.docx" "meeting-895119567.ics" "quiz_06_solutions.pdf" "idea-IC-193.5233.102/" "peerReview.pdf" "./" "hw.txt" "McCormick_Jacob_quiz6.pdf" "meeting-733075694.ics" "SSR_TSRPT(1).pdf" "usr/" "HW 6.docx" ".Rhistory" "IMG_20190920_164946.jpg" "IMG_20200214_121946.jpg" "CS2521_M2_Practice_Questions.pdf" "Technical Description Rubric-1.docx" "Annotated Bibliography Entry Examples.docx" "Snow Removal.pdf" "Article PDF for Reverse Engineering Assignment.pdf" "Lab 4.pdf" "R_Inference_about_slope.docx" "HW 4.docx" "Exercise 1 - Normal Equations in R.Rmd" "Brick Builder(1).pdf" "Memo #2 Guidelines-1 (1).docx" "Lab 6.pdf" "WRIT 3130 Group Lists S20.docx" "Self-Driving Cars.docx" "Mars.jar" "refman.zip" "../" "1to1schedule.pdf" "Memos 3 and 5 Performance Review Scales.pdf" "Summer 2020 Co-Op Requests_Master Spreadsheet.xlsx" "Resume3.pdf" "R_basic_regression_operations.docx" "example1.txt" "Karnaugh Map Rules.docx" "refman/" "Lab 5.pdf" "CS2521_M3_Solutions_Fall_2019.docx" "emacs-htmlize-master/" "Resume2.pdf" "zoom_amd64.deb" "Summer 2020 Received Project Requests.zip" "Brick Builder.pdf" "Jacob-McCormick.zip" ".RData" "t-test template-1(1).xlsx" "ideaIC-2019.3.tar.gz" "Stapes, Confusion Orchestrator.png")
+
+ ("/home/jacob/Documents/notes/bio2/" (24192 54905 419047 71000) "33Chapter.org~" "28Chapter.org" "34Chapter.org" "23Chapter.org" "41Chapter.org~" "27Chapter.org" "./" "26Chapter.org" "44Chapter.org" "28Chapter.org~" "23Chapter.org~" "27Chapter.org~" "41Chapter.org" "44Chapter.org~" "34Chapter.org~" "40Chapter.org" "39Chapter.org" "../" "29Chapter.org" "29Chapter.org~" "39Chapter.org~" "42Chapter.org" "42Chapter.org~" "40Chapter.org~" "26Chapter.org~" "33Chapter.org")
+
+ ("/home/jacob/WebProjects/steele/hw2/" (24190 13144 356315 131000) "./" "index.html" "index.html~" "../" "Day2/")
+
+ ("/home/jacob/WebProjects/steele/hw3/TodaysHW/" (24190 24985 333971 170000) "starter.html" "table.css" "./" "starter.html~" "../" "FinishedTableScreenshot.png")
+
+ ("/home/jacob/WebProjects/odin/google-homepage/" (24190 47756 237728 731000) "./" "index.html" "index.html~" "README.md" "../" ".git/")
+
+ ("/home/jacob/WebProjects/odin/Rock-Paper-Scissors/" (24192 52512 312718 105000) ".gitignore" "./" "index.html" "index.html~" "../" ".git/")
 
  ("/home/jacob/WebProjects/odin/" (24192 47897 827131 269000) "./" "../" "videos" "google-homepage/" "Rock-Paper-Scissors/")
 
- ("/home/jacob/" (24191 56246 736907 89000) "NetBeansProjects/" ".gitconfig" ".config/" ".gnupg/" ".bashrc" ".local/" "odin_on_rails/" "WebProjects/" "netbeans-8.2/" "Desktop/" "rstudio-1.2.1578-amd64.deb" ".gradle/" ".steam/" ".gnome/" ".nbi/" ".bash_logout" "./" "SQLite/" ".rbenv/" ".bundle/" ".dbus/" ".ICEauthority" ".fretsonfire/" "Documents/" ".audacity-data/" "IdeaProjects/" "AndroidStudioProjects/" "JavaProjects/" ".Rhistory" "Android/" ".java/" ".aspell.en.pws" ".zoom/" ".netrc" ".IdeaIC2019.3/" ".fxreference.FXReference/" ".viminfo" ".minecraft/" ".pam_environment" "MIPSProjects/" "snap/" ".emulator_console_auth_token" ".pulse-cookie" ".bash_history" "R/" ".aspell.en.prepl" "../" "Pictures/" ".AndroidStudio3.5/" ".emacs.d/" "CProjects/" "Downloads/" "Steam/" "Music/" ".netbeans/" ".profile" ".sudo_as_admin_successful" "Public/" ".steampid" ".rstudio-desktop/" ".mozilla/" ".steampath" ".adobe/" "Videos/" ".RData" ".gphoto/" ".pki/" ".lesshst" ".gem/" ".cache/" ".gconf/" "Templates/" ".macromedia/" ".ssh/" ".android/")
-
  ("/home/jacob/Documents/resume/" (24191 56206 941422 711000) "./" "resume.tex" "resume.aux" "resume.log" "../")
-
- ("/home/jacob/WebProjects/odin/google-homepage/" (24186 32517 765360 847000) "./" "index.html" "index.html~" "README.md" "../" ".git/")
 
  ("/home/jacob/WebProjects/steele/hw4/" (24190 25368 985614 651000) "./" "../" "forms.html")
 
  ("/home/jacob/WebProjects/steele/" (24190 25348 785296 223000) "hw2/" "./" "hw3/" "hw1/" "../" "hw4/")
 
- ("/home/jacob/WebProjects/steele/hw3/TodaysHW/" (24187 2305 0 0) "starter.html" "table.css" "./" "../" "FinishedTableScreenshot.png")
-
  ("/home/jacob/WebProjects/steele/hw3/" (24190 23666 228850 790000) "tables.html" "./" "TodaysHW/" "../")
 
- ("/home/jacob/WebProjects/steele/hw2/" (24190 12058 176369 184000) ".#index.html" "./" "../" "Day2/")
-
- ("/home/jacob/.emacs.d/" (24190 2937 276856 110000) "init.el" ".mbsyncrc" "ido.last~" "./" "init.el~" "tramp" "config.el" "config.org" "recentf~" "recentf" "elpa/" "session.10aac83e898d6bca23157093546359125500000017780073" "../" "smex-items" "config.org~" "auto-save-list/" "ido.last" ".git/")
-
  ("/home/jacob/Documents/" (24189 10706 135430 381000) "data2.txt" "bethelscholarshipapp.docx" "HW 6.odt" "data3.txt" "stats.ms" "instructions/" "./" "techdoc.tex" "HW10-Part-7.pdf" "Jacob-McCormick.docx" "OrgExamReview.odt" "classes.org~" "SLR-1.Rmd" "Lab5.circ" "bethelscholarshipapp.odt" "Lab6.circ" "AnnotatedBib.odt" "data1.txt" "SLR-1.pdf" "classes.org" "../" "AnnotatedBib.docx" "notes/" "resume/" "stats.pdf" "Ch10Comp.pdf" "HW10-Part-7.Rmd" "stats.ms~")
-
- ("/home/jacob/Downloads/" (24190 11907 221935 906000) "SSR_TSRPT.pdf" "Regression_HW1.pdf" "copiers.txt" "Resume3(1).pdf" "Memo #2 Guidelines-1.docx" "Face_Recognition_in_Mobile_Devices.pdf" "Econ 3821 Take Home Test.docx" "syllabus.docx" "meeting-895119567.ics" "quiz_06_solutions.pdf" "idea-IC-193.5233.102/" "peerReview.pdf" "./" "hw.txt" "McCormick_Jacob_quiz6.pdf" "meeting-733075694.ics" "SSR_TSRPT(1).pdf" "usr/" "HW 6.docx" ".Rhistory" "IMG_20190920_164946.jpg" "IMG_20200214_121946.jpg" "CS2521_M2_Practice_Questions.pdf" "Technical Description Rubric-1.docx" "Annotated Bibliography Entry Examples.docx" "Snow Removal.pdf" "Article PDF for Reverse Engineering Assignment.pdf" "Lab 4.pdf" "R_Inference_about_slope.docx" "HW 4.docx" "Exercise 1 - Normal Equations in R.Rmd" "Brick Builder(1).pdf" "Memo #2 Guidelines-1 (1).docx" "Lab 6.pdf" "WRIT 3130 Group Lists S20.docx" "Self-Driving Cars.docx" "Mars.jar" "refman.zip" "../" "1to1schedule.pdf" "Memos 3 and 5 Performance Review Scales.pdf" "Summer 2020 Co-Op Requests_Master Spreadsheet.xlsx" "Resume3.pdf" "R_basic_regression_operations.docx" "example1.txt" "Karnaugh Map Rules.docx" "refman/" "Lab 5.pdf" "CS2521_M3_Solutions_Fall_2019.docx" "emacs-htmlize-master/" "Resume2.pdf" "zoom_amd64.deb" "Summer 2020 Received Project Requests.zip" "Brick Builder.pdf" "Jacob-McCormick.zip" ".RData" "t-test template-1(1).xlsx" "ideaIC-2019.3.tar.gz" "Stapes, Confusion Orchestrator.png")
-
- ("/home/jacob/Documents/notes/bio2/" (24190 2936 416420 527000) "33Chapter.org~" "28Chapter.org" "34Chapter.org" "23Chapter.org" "41Chapter.org~" "27Chapter.org" "./" "26Chapter.org" "44Chapter.org" "28Chapter.org~" "23Chapter.org~" "27Chapter.org~" "41Chapter.org" "44Chapter.org~" "34Chapter.org~" "40Chapter.org" "39Chapter.org" "../" "29Chapter.org" "29Chapter.org~" "39Chapter.org~" "42Chapter.org" "42Chapter.org~" "40Chapter.org~" "26Chapter.org~" "33Chapter.org")
 
  ("/home/jacob/WebProjects/" (24186 14472 384090 345000) "steele/" "./" "../" "odin/")
 

@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- htmlize-file
  minimize-window
  shell
  backward-sentence
  forward-sentence
  list-packages
  ansi-term
+ dired
 )
 
 ;; ----- smex-data -----
