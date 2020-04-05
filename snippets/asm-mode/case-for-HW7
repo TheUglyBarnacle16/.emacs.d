@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: case for HW7
+# key: ca
+# --
+case$1:
+    div \$t$2, \$s7, \$t$2
+    li \$s6, $3
+    mul \$s6, \$s6, \$t$2
+    sub \$s7, \$s7, \$s6
+    j test$1

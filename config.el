@@ -69,7 +69,13 @@
   :ensure t
   :config
   (dashboard-setup-startup-hook)
-  (setq dashboard-items '((recents . 10))))
+  (setq dashboard-startup-banner "~/.emacs.d/logo/PinkEmacsIcon.png")
+  (setq dashboard-items '((recents . 10)
+                          (agenda  . 10))))
+
+(eval-after-load "dired-aux"
+   '(add-to-list 'dired-compress-file-suffixes
+                 '("\\.zip\\'" ".zip" "unzip")))
 
 (autoload 'c++-mode "cc-mode" "C++ Editing Mode" t)
 (autoload 'c-mode "cc-mode" "C Editing Mode" t)
@@ -100,7 +106,14 @@
 
 (setq ring-bell-function 'ignore)
 
-(setq display-time-12hr-format t)
+(defadvice kill-buffer (around kill-buffer-around-advice activate)
+  (let ((buffer-to-kill (ad-get-arg 0)))
+    (if (equal buffer-to-kill "*scratch*")
+        (bury-buffer)
+      ad-do-it)))
+
+(setq display-time-24hr-format t)
+(setq display-time-default-load-average nil)
 (display-time-mode 1)
 
 (setq inhibit-startup-message t)
@@ -136,6 +149,11 @@
 
 (setq-default show-trailing-whitespace t)
 
+(global-set-key (kbd "<C-up>") 'shrink-window)
+(global-set-key (kbd "<C-down>") 'enlarge-window)
+(global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
+
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (column-number-mode 1)
@@ -145,7 +163,7 @@
   :config
   (require 'spaceline-config)
   (setq powerline-default-seperator (quote arrow))
-  (spaceline-spacemacs-theme))
+  (spaceline-emacs-theme))
 
 (use-package multiple-cursors
   :ensure t)
@@ -162,12 +180,15 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-switchb)
 
+(setq org-agenda-files (quote ("~/agenda.org")))
+
 (use-package org-bullets
   :ensure t
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode))))
 
 (add-hook 'org-mode-hook 'org-indent-mode)
+(add-hook 'org-mode-hook '(lambda() (visual-line-mode 1)))
 
 (setq org-src-window-setup 'current-window)
 
@@ -176,7 +197,7 @@
              '("el" "#+BEGIN_SRC emacs-lisp\n?\n#+END_SRC"))
 
 (setq org-todo-keywords
-   '((sequence "TODO" "PROGRESS" "DONE")))
+   '((sequence "TODO(t)" "WAITING(w)" "PROGRESS(p)" "DONE(d)")))
 
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
@@ -206,13 +227,13 @@
   :init
   (which-key-mode))
 
-(add-to-list 'load-path
-             "~/.emacs.d/plugins/yasnippet")
-(require 'yasnippet)
-(yas-reload-all)
-
-(use-package yasnippet-snippets
-  :ensure t)
+(use-package yasnippet
+  :ensure t
+  :config
+    (use-package yasnippet-snippets
+      :ensure t)
+    (yas-reload-all))
+(add-hook 'text-mode-hook 'yas-minor-mode)
 
 (use-package sudo-edit
   :ensure t
@@ -246,4 +267,7 @@
   (diminish 'which-key-mode)
   (diminish 'beacon-mode)
   (diminish 'subword-mode)
-  (diminish 'org-indent-mode))
+  (diminish 'yas-minor-mode)
+  (diminish 'page-break-lines-mode)
+  (diminish 'org-indent-mode)
+  (diminish 'visual-line-mode))

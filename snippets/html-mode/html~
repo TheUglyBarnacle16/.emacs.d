@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: HTML Boilerplate
+# key: <!D
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>$1</title>
+  </head>
+  <body>
+    $0
+  </body>
+</html>

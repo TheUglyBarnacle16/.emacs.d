@@ -1,28 +1,45 @@
 
 ;; ----- smex-history -----
 (
- minimize-window
  shell
- backward-sentence
- forward-sentence
- list-packages
- ansi-term
- dired
+ irony-install-server
+ make-directory
+ minimize-window
+ newsticker-show-news
+ diminish
+ list-directory
 )
 
 ;; ----- smex-data -----
 (
  (symon-mode . 2)
- (list-packages . 3)
+ (list-packages . 4)
  (clipboard-yank . 1)
- (shell . 20)
+ (shell . 25)
  (dired . 4)
- (whitespace-mode . 1)
+ (whitespace-mode . 3)
  (htmlize-file . 4)
  (dired-mark . 1)
  (load-file . 1)
  (ansi-term . 1)
- (minimize-window . 12)
+ (minimize-window . 13)
  (forward-sentence . 2)
  (backward-sentence . 1)
+ (yas-expand . 8)
+ (yas-minor-mode-on . 1)
+ (yas-reload-all . 2)
+ (yas-describe-tables . 9)
+ (customize-themes . 8)
+ (customize . 2)
+ (whitespace-cleanup . 1)
+ (yas-minor-mode . 1)
+ (yas-new-snippet . 3)
+ (backward-page . 1)
+ (describe-key . 1)
+ (list-directory . 1)
+ (diminish . 1)
+ (dired-insert-subdir . 1)
+ (newsticker-show-news . 2)
+ (make-directory . 1)
+ (irony-install-server . 1)
 )

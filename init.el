@@ -9,10 +9,6 @@
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
-
-(unless (package-installed-p 'doom-themes)
-  (package-refresh-contents)
-  (package-install 'doom-themes))
 ;;;;;
 
 (org-babel-load-file (expand-file-name "~/.emacs.d/config.org"))
@@ -23,19 +19,42 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#282a36" "#ff5555" "#50fa7b" "#f1fa8c" "#61bfff" "#ff79c6" "#8be9fd" "#f8f8f2"])
- '(custom-enabled-themes (quote (doom-dracula)))
+ '(custom-enabled-themes (quote (doom-gruvbox)))
  '(custom-safe-themes
    (quote
-    ("1526aeed166165811eefd9a6f9176061ec3d121ba39500af2048073bea80911e" "b0fd04a1b4b614840073a82a53e88fe2abc3d731462d6fde4e541807825af342" "ecba61c2239fbef776a72b65295b88e5534e458dfe3e6d7d9f9cb353448a569e" "f0dc4ddca147f3c7b1c7397141b888562a48d9888f1595d69572db73be99a024" "3a3de615f80a0e8706208f0a71bbcc7cc3816988f971b6d237223b6731f91605" "b35a14c7d94c1f411890d45edfb9dc1bd61c5becd5c326790b51df6ebf60f402" "93a0885d5f46d2aeac12bf6be1754faa7d5e28b27926b8aa812840fe7d0b7983" "b54826e5d9978d59f9e0a169bbd4739dd927eead3ef65f56786621b53c031a7c" "6b2636879127bf6124ce541b1b2824800afc49c6ccd65439d6eb987dbf200c36" "84890723510d225c45aaff941a7e201606a48b973f0121cb9bcb0b9399be8cba" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
+    ("76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "d71aabbbd692b54b6263bfe016607f93553ea214bc1435d17de98894a5c3a086" "24132f7b6699c6e0118d742351b74141bac3c4388937e40db9207554eaae78c9" "e1d09f1b2afc2fed6feb1d672be5ec6ae61f84e058cb757689edb669be926896" "a06658a45f043cd95549d6845454ad1c1d6e24a99271676ae56157619952394a" "b89ae2d35d2e18e4286c8be8aaecb41022c1a306070f64a66fd114310ade88aa" "123a8dabd1a0eff6e0c48a03dc6fb2c5e03ebc7062ba531543dfbce587e86f2a" "939ea070fb0141cd035608b2baabc4bd50d8ecc86af8528df9d41f4d83664c6a" "4cf9ed30ea575fb0ca3cff6ef34b1b87192965245776afa9e9e20c17d115f3fb" "aded61687237d1dff6325edb492bde536f40b048eab7246c61d5c6643c696b7f" "845103fcb9b091b0958171653a4413ccfad35552bc39697d448941bcbe5a660d" "99ea831ca79a916f1bd789de366b639d09811501e8c092c85b2cb7d697777f93" "285efd6352377e0e3b68c71ab12c43d2b72072f64d436584f9159a58c4ff545a" "f2b56244ecc6f4b952b2bcb1d7e517f1f4272876a8c873b378f5cf68e904bd59" "361f5a2bc2a7d7387b442b2570b0ef35198442b38c2812bf3c70e1e091771d1a" "d74c5485d42ca4b7f3092e50db687600d0e16006d8fa335c69cf4f379dbd0eee" "1526aeed166165811eefd9a6f9176061ec3d121ba39500af2048073bea80911e" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
  '(fci-rule-color "#6272a4")
+ '(hl-todo-keyword-faces
+   (quote
+    (("TODO" . "#dc752f")
+     ("NEXT" . "#dc752f")
+     ("THEM" . "#2d9574")
+     ("PROG" . "#4f97d7")
+     ("OKAY" . "#4f97d7")
+     ("DONT" . "#f2241f")
+     ("FAIL" . "#f2241f")
+     ("DONE" . "#86dc2f")
+     ("NOTE" . "#b1951d")
+     ("KLUDGE" . "#b1951d")
+     ("HACK" . "#b1951d")
+     ("TEMP" . "#b1951d")
+     ("FIXME" . "#dc752f")
+     ("XXX+" . "#dc752f")
+     ("\\?\\?\\?+" . "#dc752f"))))
  '(jdee-db-active-breakpoint-face-colors (cons "#1E2029" "#bd93f9"))
  '(jdee-db-requested-breakpoint-face-colors (cons "#1E2029" "#50fa7b"))
  '(jdee-db-spec-breakpoint-face-colors (cons "#1E2029" "#565761"))
+ '(objed-cursor-color "#ff5555")
  '(package-selected-packages
    (quote
-    (yasnippet-snippets yasnippet irony company-irony pretty-mode expand-region multiple-cursors swiper popup-kill-ring doom-modeline symon diminish spaceline company dashboard sudo-edit free-keys switch-window rainbow-mode avy smex ido-vertical-mode org-bullets beacon spacemacs-theme doom-themes zenburn-theme auctex which-key)))
+    (gnuplot-mode gnuplot gruvbox-theme yasnippet-snippets which-key use-package symon switch-window swiper sudo-edit spacemacs-theme spaceline smex pretty-mode popup-kill-ring org-bullets multiple-cursors ido-vertical-mode free-keys expand-region doom-themes diminish dashboard company-irony beacon avy auctex)))
+ '(pdf-view-midnight-colors (cons "#f8f8f2" "#282a36"))
+ '(rustic-ansi-faces
+   ["#282a36" "#ff5555" "#50fa7b" "#f1fa8c" "#61bfff" "#ff79c6" "#8be9fd" "#f8f8f2"])
  '(vc-annotate-background "#282a36")
  '(vc-annotate-color-map
    (list
@@ -63,5 +82,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#222D31" :foreground "#d8d8d8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "ADBO" :family "Source Code Pro"))))
- '(mode-line ((t (:box nil)))))
+ )

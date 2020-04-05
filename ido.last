@@ -2,12 +2,19 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/jacob/snap/exercism/5/exercism/cpp/" . "isogram/")
+ ("/home/jacob/snap/exercism/5/exercism/" . "cpp/")
+ ("/home/jacob/snap/exercism/" . "5/")
+ ("/home/jacob/.emacs.d/newsticker/" . "feeds/")
+ ("/home/jacob/Documents/notes/khan/" . "cs/")
+ ("/home/jacob/.emacs.d/elpa/" . "doom-themes-20200327.1325/")
+ ("/home/jacob/.emacs.d/" . "elpa/")
  ("/home/jacob/.emacs.d/plugins/" . "yasnippet/")
  ("/home/jacob/WebProjects/odin/" . "Rock-Paper-Scissors/")
  ("/home/jacob/WebProjects/steele/hw3/" . "TodaysHW/")
- ("/home/jacob/WebProjects/steele/" . "hw4/")
- ("/home/jacob/WebProjects/" . "odin/")
- ("/home/jacob/Downloads/" . "refman/")
+ ("/home/jacob/WebProjects/steele/" . "hw2/")
+ ("/home/jacob/WebProjects/" . "steele/")
+ ("/home/jacob/Downloads/" . "Homework/")
  ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/main/res/" . "layout/")
  ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/main/" . "res/")
  ("/home/jacob/AndroidStudioProjects/ProblemSolver/app/src/" . "main/")
@@ -20,35 +27,47 @@
  ("/home/jacob/NetBeansProjects/ProblemSolver/" . "test/")
  ("/home/jacob/NetBeansProjects/Matrix/" . "src/")
  ("/home/jacob/NetBeansProjects/" . "ProblemSolver/")
- ("/home/jacob/Documents/notes/" . "bio2/")
+ ("/home/jacob/Documents/notes/" . "it/")
  ("/home/jacob/Documents/" . "notes/")
  ("/sudo:manjaro:/etc/" . "wpa_supplicant/")
  ("/sudo:manjaro:/" . "etc/")
  ("/etc/" . "wpa_supplicant/")
  ("/" . "etc/")
- ("/home/jacob/" . "WebProjects/")
+ ("/home/jacob/" . "Documents/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jacob/snap/exercism/5/exercism/cpp/isogram/build/"
+ "/home/jacob/snap/exercism/5/exercism/cpp/isogram/"
+ "/home/jacob/snap/exercism/5/exercism/cpp/hello-world/"
+ "/home/jacob/snap/exercism/5/exercism/cpp/hello-world/build/"
+ "/home/jacob/snap/exercism/5/exercism/cpp/hello-world/build/CMakeFiles/"
+ "/home/jacob/WebProjects/steele/udemy/"
+ "/home/jacob/Documents/"
+ "/home/jacob/Documents/instructions/"
  "/home/jacob/.emacs.d/"
- "/home/jacob/.emacs.d/plugins/yasnippet/doc/"
- "/home/jacob/"
- "/home/jacob/Documents/notes/webdev/"
- "/home/jacob/WebProjects/odin/Rock-Paper-Scissors/"
+ "/home/jacob/Documents/notes/khan/cs/"
  "/home/jacob/Documents/notes/"
  "/home/jacob/Documents/resume/"
+ "/home/jacob/"
+ "/home/jacob/Pictures/"
+ "/home/jacob/Downloads/"
+ "/home/jacob/Downloads/Homework/"
+ "/home/jacob/MIPSProjects/"
+ "/home/jacob/WebProjects/steele/hw2/"
+ "/home/jacob/Documents/notes/bio2/"
+ "/home/jacob/.emacs.d/elpa/spacemacs-theme-20200324.1107/"
+ "/home/jacob/WebProjects/steele/hw1/"
+ "/home/jacob/.emacs.d/plugins/yasnippet/doc/"
+ "/home/jacob/Documents/notes/webdev/"
+ "/home/jacob/WebProjects/odin/Rock-Paper-Scissors/"
  "/home/jacob/WebProjects/odin/"
  "/home/jacob/WebProjects/odin/google-homepage/"
  "/home/jacob/WebProjects/steele/hw4/"
  "/home/jacob/WebProjects/steele/hw3/TodaysHW/"
- "/home/jacob/WebProjects/steele/hw2/"
- "/home/jacob/Documents/notes/bio2/"
  "/home/jacob/Documents/notes/bio1/"
  "/home/jacob/WebProjects/"
- "/home/jacob/Downloads/"
- "/home/jacob/Documents/instructions/"
- "/home/jacob/Documents/"
  "/home/jacob/CProjects/c++/"
  "/home/jacob/Android/"
  "/home/jacob/Downloads/refman/"
@@ -67,35 +86,95 @@
 
 ;; ----- ido-work-file-list -----
 (
- "config.el"
- "snippet-reference.org"
- "index.org"
- "temp.html"
- "introToFrontEnd.org"
- "index.html"
- "gitcheat.org"
- "resume.tex"
- "example.html"
- "forms.html"
+ "CMakeLists.txt"
+ "CMakeCache.txt"
+ "hello_world_test.cpp"
+ "CMakeOutput.log"
+ "hello_world.h"
+ "form.html"
+ "table.html"
+ "assign1.html"
+ "rep3.bib"
+ "example.tex"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jacob/.emacs.d/" (24193 24566 342816 477000) "init.el" "snippets/" ".mbsyncrc" "ido.last~" "./" "init.el~" "tramp" "config.el" "config.org" "recentf~" "recentf" "elpa/" "../" "smex-items" "config.org~" "auto-save-list/" "ido.last" ".git/")
+ ("/home/jacob/snap/exercism/5/exercism/cpp/isogram/build/" (24201 18518 271661 667000) "./" "CMakeLists.txt" "CMakeCache.txt" "CMakeLists.txt~" "../" "CMakeFiles/")
 
- ("/home/jacob/" (24194 5162 425061 423000) "NetBeansProjects/" ".gitconfig" ".config/" ".gnupg/" ".bashrc" ".local/" "odin_on_rails/" "WebProjects/" "netbeans-8.2/" "Desktop/" "rstudio-1.2.1578-amd64.deb" ".gradle/" ".steam/" ".gnome/" ".nbi/" ".bash_logout" "./" "SQLite/" ".rbenv/" ".bundle/" ".dbus/" ".ICEauthority" ".fretsonfire/" "Documents/" ".audacity-data/" "IdeaProjects/" "AndroidStudioProjects/" "JavaProjects/" ".Rhistory" "Android/" ".java/" ".aspell.en.pws" ".zoom/" ".netrc" ".IdeaIC2019.3/" ".fxreference.FXReference/" ".viminfo" ".minecraft/" ".pam_environment" "MIPSProjects/" "snap/" ".emulator_console_auth_token" ".pulse-cookie" ".bash_history" "R/" ".aspell.en.prepl" "../" "Pictures/" ".AndroidStudio3.5/" ".emacs.d/" "CProjects/" "Downloads/" "Steam/" "Music/" ".netbeans/" ".vscode/" ".profile" ".sudo_as_admin_successful" "Public/" ".steampid" ".rstudio-desktop/" ".mozilla/" ".steampath" ".adobe/" "Videos/" ".RData" ".gphoto/" ".pki/" ".lesshst" ".gem/" ".cache/" ".gconf/" "Templates/" ".macromedia/" ".ssh/" ".android/")
+ ("/home/jacob/snap/exercism/5/exercism/cpp/isogram/" (24201 18419 493643 638000) "build/" ".exercism/" "test/" "./" "isogram.h" "isogram_test.cpp" "isogram.cpp" "README.md" "../")
+
+ ("/home/jacob/snap/exercism/5/exercism/cpp/" (24201 18387 716166 722000) "./" "isogram/" "../" "hello-world/")
+
+ ("/home/jacob/" (24201 18102 817577 231000) "NetBeansProjects/" ".gitconfig" ".config/" ".gnuplot_history" ".gnupg/" ".bashrc" ".local/" "odin_on_rails/" "WebProjects/" "netbeans-8.2/" "Desktop/" "rstudio-1.2.1578-amd64.deb" "exercism/" ".gradle/" ".steam/" ".gnome/" ".nbi/" ".bashrc~" ".bash_logout" "./" "SQLite/" ".rbenv/" ".bundle/" ".dbus/" ".ICEauthority" ".fretsonfire/" "Documents/" "tmp.html~" ".audacity-data/" "IdeaProjects/" "AndroidStudioProjects/" "JavaProjects/" ".Rhistory" "Android/" ".java/" ".aspell.en.pws" ".zoom/" ".netrc" ".IdeaIC2019.3/" ".fxreference.FXReference/" ".viminfo" ".minecraft/" ".pam_environment" "agenda.org" "MIPSProjects/" "snap/" ".emulator_console_auth_token" "tmp.html" ".pulse-cookie" ".bash_history" "R/" ".aspell.en.prepl" "../" "Pictures/" ".AndroidStudio3.5/" "example.org~" ".emacs.d/" "CProjects/" "Downloads/" "Steam/" "Music/" ".netbeans/" ".vscode/" ".profile" ".sudo_as_admin_successful" "Public/" ".steampid" ".rstudio-desktop/" ".mozilla/" ".steampath" "agenda.org~" ".adobe/" "Videos/" ".RData" ".gphoto/" ".pki/" ".lesshst" ".gem/" ".cache/" ".gconf/" "Templates/" ".macromedia/" ".ssh/" ".android/")
+
+ ("/home/jacob/snap/exercism/5/exercism/cpp/hello-world/" (24201 17189 402325 682000) "build/" ".exercism/" "./" "hello_world.h" "README.md" "hello_world_test.cpp" "../" "hello_world.h~")
+
+ ("/home/jacob/snap/exercism/5/exercism/cpp/hello-world/build/" (24201 17608 697988 24000) "./" "CMakeLists.txt" "CMakeCache.txt" "CMakeLists.txt~" "../" "CMakeFiles/")
+
+ ("/home/jacob/snap/exercism/5/exercism/cpp/hello-world/build/CMakeFiles/" (24201 16920 136075 268000) "3.13.4/" "./" "feature_tests.cxx" "feature_tests.bin" "CMakeOutput.log" "../" "CMakeTmp/" "cmake.check_cache")
+
+ ("/home/jacob/snap/exercism/5/exercism/" (24201 16675 332988 929000) "./" "cpp/" "../")
+
+ ("/home/jacob/snap/exercism/5/" (24201 16675 332988 929000) ".config/" "exercism/" "./" "../")
+
+ ("/home/jacob/snap/exercism/" (24201 16562 987954 114000) "common/" "./" "current/" "../" "5/")
+
+ ("/home/jacob/snap/" (24201 16562 987954 114000) "exercism/" "./" "scrcpy/" "code/" "../")
+
+ ("/home/jacob/WebProjects/steele/udemy/" (24201 5665 639834 145000) "table.html" "table.html~" "./" "assign1.html~" "../" "assign1.html")
+
+ ("/home/jacob/Downloads/" (24201 5140 453764 21000) "SSR_TSRPT.pdf" "Regression_HW1.pdf" "Day6.zip" "Resume3(1).pdf" "Kerrigan-Peer Evaluations-Zone of Inhibition.docx" "idea-IC-193.5233.102/" "./" "SSR_TSRPT(1).pdf" "usr/" "R_ANOVA_approach_to_regression.pdf" "ANOVA_Table.pdf" "F-distribution Table.doc" "Lab Report 3 Bacteria Rubric-1.pdf" "Snow Removal.pdf" "Lab 7 - Online.pdf" "2015-10-28_18-26-05__pokemondata.zip" "Mars.jar" "F-distribution Table-1.pdf" "Regression_HW2.pdf" "../" "1to1schedule.pdf" "Summer 2020 Co-Op Requests_Master Spreadsheet.xlsx" "AnnotatedBib.docx" "Resume3.pdf" "R_confidence_and_prediction_intervals.pdf" "Study Guide for GB2 Exam 3-2.pdf" "Ex_11_27c.pdf" "Coefficient_of_Determination_and_Predictions.pdf" "refman/" "F-distribution Table.pdf" "CS2521_M3_Solutions_Fall_2019.docx" "Resume2.pdf" "aadhithya-dineshs-resume.pdf" "Summer 2020 Received Project Requests.zip" "Jacob-McCormick.zip" "Model_Validity_Test.pdf" "t-test template-1(1).xlsx")
+
+ ("/home/jacob/Documents/instructions/" (24200 58430 796759 161000) "example.aux" "caddy1.jpg" "caddyscrew.jpg" "driveslide.jpg" "hidden.jpg" "25start.jpg" "drivesection.jpg" "example.log" "wrong.jpg" "25drive.jpg" "motherboard.jpg" "./" "example.blg" "ref.bib" "example.toc" "drivepreslide.jpg" "example.pdf" "RAM.jpg" "screws.jpg" "caddy2.jpg" "example.tex.bak" "drivecomparison.jpg" "../" "example.tex" "25startscrew.jpg" "example.bcf" "right.jpg" "m2.jpg" "base.jpg" "example.tex~" "example.run.xml" "screwflap.jpg" "tools.jpg" "spudger.jpg" "ref.bib~" "example.bbl" "strip.jpg")
+
+ ("/home/jacob/Documents/" (24200 58431 596714 153000) "data2.txt" "Lab7.log" "Lab7.pdf" "SLR-2.Rmd" "bethelscholarshipapp.docx" "HW 6.odt" "data3.txt" "stats.ms" "instructions/" "Lab7.circ" "./" "techdoc.tex" "LabReport3.tex.bbl" "LabReport3.log" "intro.tex~" "intro.tex.bak" "HW10-Part-7.pdf" "Jacob-McCormick.docx" "LabReport3.tex.blg" "LabReport3.bcf" "intro.log" "OrgExamReview.odt" "LabReport3.aux" "classes.org~" "LabReport3.blg" "SLR-1.Rmd" "Lab5.circ" "LabReport3.pdf" "draft.odt" "bethelscholarshipapp.odt" "Lab6.circ" "AnnotatedBib.odt" "data1.txt" "SLR-1.pdf" "Screenshot.png" "classes.org" "intro.pdf" "../" "AnnotatedBib.docx" "intro.tex" "LabReport3.tex~" "LabReport3.tex" "notes/" "figures/" "LabReport3.run.xml" "resume/" "Lab7.aux" "Lab7.tex" "stats.pdf" "rep3.bib" "LabReport3.bbl" "Lab7.tex~" "rep3.bib~" "intro.aux" "SLR-2.pdf" "Ch10Comp.pdf" "HW10-Part-7.Rmd" "stats.ms~")
+
+ ("/home/jacob/WebProjects/steele/" (24197 15340 673805 533000) "hw2/" "hwCSS1/" "./" "hw3/" "hw1/" "../")
+
+ ("/home/jacob/.emacs.d/elpa/" (24197 9864 730768 829000) "swiper-20200319.1334/" "bind-key-20191110.416/" "yasnippet-snippets-20200314.1030/" "company-irony-20190124.2346/" "gnuplot-mode-20171013.1616/" "auctex-12.1.2.signed" "page-break-lines-20200305.244/" "avy-20200311.1106/" "popup-kill-ring-20131020.1854/" "dashboard-20200306.1344/" "doom-themes-20200331.1306/" "pretty-mode-20190615.2045/" "./" "s-20180406.808/" "diminish-20191127.1326/" "use-package-20200322.2110/" "auctex-12.1.2/" "0blayout-readme.txt" "gruvbox-theme-20200307.1522/" "which-key-20200216.1350/" "pos-tip-20191227.1356/" "spaces-readme.txt" "gnuplot-readme.txt" "beacon-20190104.1931/" "symon-20170224.833/" "spacemacs-theme-20200324.1107/" "auctex-12.2.0.signed" "gruvbox-theme-readme.txt" "gnuplot-mode-readme.txt" "auctex-12.2.0/" "archives/" "sudo-edit-20180731.1908/" "multiple-cursors-20191210.1759/" "free-keys-20160726.2050/" "../" "auctex-readme.txt" "powerline-20200105.2053/" "popup-20160709.1429/" "gnupg/" "irony-20200130.849/" "auctex-latexmk-readme.txt" "ido-vertical-mode-20180618.2101/" "switch-window-20181104.340/" "yasnippet-20200329.1434/" "spaceline-20191230.1221/" "rainbow-mode-readme.txt" "company-20200324.2145/" "ivy-20200319.1247/" "expand-region-20200304.1839/" "org-bullets-20200317.1740/" "dash-20200119.2310/" "autothemer-20180920.923/" "smex-20151212.2209/" "gnuplot-20200322.53/")
+
+ ("/home/jacob/Documents/notes/" (24200 911 600086 992000) "./" "bio1/" "swdesign/" "bio2/" ".#temp.org" "gitcheat.org" "webdev/" "../" "it/" "gitcheat.org~" "prob/")
+
+ ("/home/jacob/.emacs.d/" (24200 42367 75828 446000) "init.el" "snippets/" ".mbsyncrc" "ido.last~" "./" "init.el~" "tramp" "config.el" "logo/" "config.org" "recentf~" "recentf" "elpa/" "../" "bookmarks" "smex-items" "newsticker/" "config.org~" "auto-save-list/" "ido.last" ".git/")
+
+ ("/home/jacob/.emacs.d/newsticker/feeds/" (24198 11103 37380 394000) "./" "nil/" "Luke Smith/" "Emacs Wiki/" "../")
+
+ ("/home/jacob/.emacs.d/newsticker/" (24197 64152 909698 564000) "feeds/" "./" "../")
+
+ ("/home/jacob/Documents/notes/khan/cs/" (24200 342 292731 215000) "./" "../")
+
+ ("/home/jacob/Documents/notes/khan/" (24199 64817 707797 982000) "./" "cs/" "../")
+
+ ("/home/" (23880 61743 826030 984000) "./" "jacob/" "../")
+
+ ("/home/jacob/Pictures/" (24199 20512 978685 281000) "./" "Wallpapers/" "../" "1024px-AtomicEmacsIcon.svg.png")
+
+ ("/home/jacob/Documents/resume/" (24199 46883 751286 554000) "resume.pdf" "./" "resume.tex" "resume.out" "resume.tex~" "resume.aux" "resume.log" "../")
+
+ ("/home/jacob/MIPSProjects/" (24196 46814 163653 531000) "HW4-2.asm" "HW6.asm" "Lab3.asm" "HW5-2.asm" "HW7.asm" "./" "Lab4.asm" "HW4-1.asm" "HW2-2b.asm" "HW6-3.asm" "HW2-2a.asm" "HW2-1a.asm" "HW5-1.asm" "HW6-2.asm" "HW7.asm~" "Lab2.asm" "HW4-2a.asm" "Lab1.asm" "../" "HW2-1b.asm" "HW6-1.asm")
+
+ ("/home/jacob/Downloads/Homework/" (24197 14734 389221 760000) "kitty-under-bed.jpg" "./" "index.html" "app.css" "index.html~" "main.css" "../" "ocelot.html")
+
+ ("/home/jacob/.emacs.d/logo/" (24195 44346 770533 783000) "PinkEmacsIcon.png" "./" "BlueEmacsIcon.png" "AtomicEmacsIcon.png" "EmacsIcon.png" "../" "GrapeEmacsIcon.png")
+
+ ("/home/jacob/Documents/notes/webdev/" (24193 24438 249873 80000) "./" "../")
+
+ ("/home/jacob/WebProjects/steele/hw1/" (24194 35748 307881 478000) "./" "hw1org.org" "hw1org.org.html" "../" "hw1.html" "hw1.html~")
+
+ ("/home/jacob/.emacs.d/elpa/doom-themes-20200327.1325/" (24193 23900 661334 799000) "doom-wilmersdorf-theme.el" "doom-themes-ext-visual-bell.el" "doom-themes-ext-neotree.el" "doom-one-theme.el" "doom-horizon-theme.el" "doom-themes-base.elc" "doom-monokai-classic-theme.el" "doom-spacegrey-theme.el" "doom-opera-light-theme.el" "./" "doom-fairy-floss-theme.el" "doom-dracula-theme.el" "doom-opera-theme.el" "doom-snazzy-theme.el" "doom-vibrant-theme.el" "doom-solarized-dark-theme.el" "doom-gruvbox-theme.el" "doom-themes.el" "doom-manegarm-theme.el" "doom-themes.elc" "doom-themes-ext-org.elc" "doom-nord-light-theme.el" "doom-monokai-pro-theme.el" "doom-oceanic-next-theme.el" "doom-themes-base.el" "doom-dark+-theme.el" "doom-outrun-electric-theme.el" "doom-moonlight-theme.el" "doom-rouge-theme.el" "../" "doom-themes-autoloads.el" "doom-nova-theme.el" "doom-solarized-light-theme.el" "doom-nord-theme.el" "doom-molokai-theme.el" "doom-themes-ext-neotree.elc" "doom-themes-ext-visual-bell.elc" "doom-monokai-spectrum-theme.el" "doom-tomorrow-night-theme.el" "doom-laserwave-theme.el" "doom-one-light-theme.el" "doom-city-lights-theme.el" "doom-tomorrow-day-theme.el" "doom-palenight-theme.el" "doom-challenger-deep-theme.el" "doom-themes-pkg.el" "doom-themes-ext-org.el" "doom-Iosvkem-theme.el" "doom-themes-ext-treemacs.el" "doom-acario-dark-theme.el" "doom-peacock-theme.el" "doom-sourcerer-theme.el" "doom-material-theme.el" "doom-ephemeral-theme.el" "doom-acario-light-theme.el")
+
+ ("/home/jacob/.emacs.d/elpa/spacemacs-theme-20200324.1107/" (24195 28805 362159 100000) "spacemacs-theme-pkg.el" "spacemacs-common.el" "spacemacs-light-theme.el" "./" "spacemacs-light-theme.elc" "spacemacs-dark-theme.el" "spacemacs-theme-autoloads.el" "../" "spacemacs-dark-theme.elc")
+
+ ("/home/jacob/.emacs.d/snippets/" (24194 35615 144990 921000) "lisp-interaction-mode/" "./" "../")
+
+ ("/home/jacob/.emacs.d/snippets/lisp-interaction-mode/" (24194 35615 148990 770000) "html" "./" "../")
 
  ("/home/jacob/.emacs.d/plugins/yasnippet/doc/" (24193 23278 255801 659000) "snippet-expansion.org" "snippet-reference.org" "./" "snippet-development.org" "stylesheets/" "yas-doc-helper.el" "snippet-organization.org" "../" "images/" "org-setup.inc" "faq.org" "index.org" "nav-menu.html.inc" "snippet-menu.org" ".nosearch")
-
- ("/home/jacob/.emacs.d/snippets/" (24193 22591 784861 318000) "./" "../")
 
  ("/home/jacob/.emacs.d/plugins/yasnippet/" (24193 20865 975965 193000) ".gitignore" "./" ".travis.yml" "yasnippet.el" "Rakefile" "doc/" "yasnippet-debug.el" "yasnippet-tests.el" "../" "CONTRIBUTING.md" "NEWS" ".git/" "README.mdown" ".gitmodules")
 
  ("/home/jacob/.emacs.d/plugins/" (24193 20861 290816 513000) "./" "yasnippet/" "../")
-
- ("/home/jacob/Documents/notes/webdev/" (24193 20353 702530 908000) ".#introToFrontEnd.org" "./" "../")
-
- ("/home/jacob/Downloads/" (24190 25328 44961 632000) "SSR_TSRPT.pdf" "Regression_HW1.pdf" "copiers.txt" "Resume3(1).pdf" "Memo #2 Guidelines-1.docx" "Face_Recognition_in_Mobile_Devices.pdf" "Econ 3821 Take Home Test.docx" "syllabus.docx" "meeting-895119567.ics" "quiz_06_solutions.pdf" "idea-IC-193.5233.102/" "peerReview.pdf" "./" "hw.txt" "McCormick_Jacob_quiz6.pdf" "meeting-733075694.ics" "SSR_TSRPT(1).pdf" "usr/" "HW 6.docx" ".Rhistory" "IMG_20190920_164946.jpg" "IMG_20200214_121946.jpg" "CS2521_M2_Practice_Questions.pdf" "Technical Description Rubric-1.docx" "Annotated Bibliography Entry Examples.docx" "Snow Removal.pdf" "Article PDF for Reverse Engineering Assignment.pdf" "Lab 4.pdf" "R_Inference_about_slope.docx" "HW 4.docx" "Exercise 1 - Normal Equations in R.Rmd" "Brick Builder(1).pdf" "Memo #2 Guidelines-1 (1).docx" "Lab 6.pdf" "WRIT 3130 Group Lists S20.docx" "Self-Driving Cars.docx" "Mars.jar" "refman.zip" "../" "1to1schedule.pdf" "Memos 3 and 5 Performance Review Scales.pdf" "Summer 2020 Co-Op Requests_Master Spreadsheet.xlsx" "Resume3.pdf" "R_basic_regression_operations.docx" "example1.txt" "Karnaugh Map Rules.docx" "refman/" "Lab 5.pdf" "CS2521_M3_Solutions_Fall_2019.docx" "emacs-htmlize-master/" "Resume2.pdf" "zoom_amd64.deb" "Summer 2020 Received Project Requests.zip" "Brick Builder.pdf" "Jacob-McCormick.zip" ".RData" "t-test template-1(1).xlsx" "ideaIC-2019.3.tar.gz" "Stapes, Confusion Orchestrator.png")
 
  ("/home/jacob/Documents/notes/bio2/" (24192 54905 419047 71000) "33Chapter.org~" "28Chapter.org" "34Chapter.org" "23Chapter.org" "41Chapter.org~" "27Chapter.org" "./" "26Chapter.org" "44Chapter.org" "28Chapter.org~" "23Chapter.org~" "27Chapter.org~" "41Chapter.org" "44Chapter.org~" "34Chapter.org~" "40Chapter.org" "39Chapter.org" "../" "29Chapter.org" "29Chapter.org~" "39Chapter.org~" "42Chapter.org" "42Chapter.org~" "40Chapter.org~" "26Chapter.org~" "33Chapter.org")
 
@@ -109,27 +188,15 @@
 
  ("/home/jacob/WebProjects/odin/" (24192 47897 827131 269000) "./" "../" "videos" "google-homepage/" "Rock-Paper-Scissors/")
 
- ("/home/jacob/Documents/resume/" (24191 56206 941422 711000) "./" "resume.tex" "resume.aux" "resume.log" "../")
-
  ("/home/jacob/WebProjects/steele/hw4/" (24190 25368 985614 651000) "./" "../" "forms.html")
-
- ("/home/jacob/WebProjects/steele/" (24190 25348 785296 223000) "hw2/" "./" "hw3/" "hw1/" "../" "hw4/")
 
  ("/home/jacob/WebProjects/steele/hw3/" (24190 23666 228850 790000) "tables.html" "./" "TodaysHW/" "../")
 
- ("/home/jacob/Documents/" (24189 10706 135430 381000) "data2.txt" "bethelscholarshipapp.docx" "HW 6.odt" "data3.txt" "stats.ms" "instructions/" "./" "techdoc.tex" "HW10-Part-7.pdf" "Jacob-McCormick.docx" "OrgExamReview.odt" "classes.org~" "SLR-1.Rmd" "Lab5.circ" "bethelscholarshipapp.odt" "Lab6.circ" "AnnotatedBib.odt" "data1.txt" "SLR-1.pdf" "classes.org" "../" "AnnotatedBib.docx" "notes/" "resume/" "stats.pdf" "Ch10Comp.pdf" "HW10-Part-7.Rmd" "stats.ms~")
-
  ("/home/jacob/WebProjects/" (24186 14472 384090 345000) "steele/" "./" "../" "odin/")
-
- ("/home/jacob/Documents/notes/" (24183 32542 122732 912000) "./" "bio1/" "swdesign/" "bio2/" ".#temp.org" "gitcheat.org" "../" "it/" "gitcheat.org~" "prob/")
-
- ("/home/jacob/Documents/instructions/" (24141 43271 677695 214000) "example.aux" "caddy1.jpg" "caddyscrew.jpg" "driveslide.jpg" "hidden.jpg" "25start.jpg" "drivesection.jpg" "example.log" "wrong.jpg" "25drive.jpg" "motherboard.jpg" "./" "example.blg" "ref.bib" "example.toc" "drivepreslide.jpg" "example.pdf" "RAM.jpg" "screws.jpg" "caddy2.jpg" "example.tex.bak" "drivecomparison.jpg" "../" "example.tex" "25startscrew.jpg" "example.bcf" "right.jpg" "m2.jpg" "base.jpg" "example.tex~" "example.run.xml" "screwflap.jpg" "tools.jpg" "spudger.jpg" "ref.bib~" "example.bbl" "strip.jpg")
 
  ("/home/jacob/CProjects/c++/" (24136 34110 391354 327000) "Card.h" "./" "../")
 
  ("/etc/NetworkManager/" (24133 27322 403438 793000) "dnsmasq-shared.d/" "./" "dispatcher.d/" "system-connections/" "conf.d/" "../" "NetworkManager.conf" "dnsmasq.d/")
-
- ("/home/jacob/MIPSProjects/" (24125 61536 733176 570000) "Lab3.asm" "./" "HW2-2b.asm" "HW2-2a.asm" "HW2-1a.asm" "Lab2.asm" "Lab1.asm" "../" "HW2-1b.asm")
 
  ("/home/jacob/NetBeansProjects/" (24041 58466 203476 679000) "Matrix/" "./" "Circles/" "BinaryHeap/" "Threads/" "ProblemSolver/" "../" "Calculator/" "JSProblemSolver.zip" "Console/" "JSProblemSolver/")
 
@@ -186,8 +253,6 @@
  ("/home/jacob/programming/" (23879 18168 99978 390000) "../" "./")
 
  ("/etc/" (23878 55147 316652 746000) "bash.bash_logout" "lightdm/" "cron.daily/" "pam.d/" "pacman-mirrors.conf" "cron.monthly/" "ca-certificates/" "openswap.conf" "locale.conf" "pkcs11/" "apparmor.d/" "tmpfiles.d/" "NetworkManager/" "highlight/" "libao.conf" "gshadow-" "ifplugd/" "ImageMagick-6/" "shells" "environment" "passwd" "shadow-" "lightdm.conf.save" "netctl/" "mtab" "wgetrc" "makepkg.conf" "UPower/" "openldap/" "kernel/" "fstab" "locale.gen" "nanorc" "nginx/" "exports.d/" "manjaro-release" "xinetd.d/" "os-release" "libva.conf" "zsh/" "mkinitcpio.conf" "avahi/" "rpc" "depmod.d/" "hosts" "default/" "iptables/" "udisks2/" "arch-release" "gtk-2.0/" "systemd/" "request-key.conf" "rsyncd.conf" "ntp.conf" "pulse/" "modules-load.d/" "bash.bashrc" "resolv.conf" "i3blocks.conf" "hostname" "manjaro-firefox.ini" "mailcap" "protocols" "krb5.conf" "libblockdev/" "ssh/" "machine-id" "nscd.conf" "passwd-" "audisp/" "xdg/" "updatedb.conf" "sysctl.d/" "grub.d/" "vconsole.conf" "group" "initcpio/" "sensors3.conf" "../" "sudoers.d/" "cron.deny" "lvm/" "logrotate.conf" "gshadow" "pamac.conf" "rc_maps.cfg" "conf.d/" "manjaro-firefox-kde.ini" "ndctl/" "motd" "issue" "pacman.d/" "ld.so.conf" "fuse.conf" "topdefaultrc" "anacrontab" ".pwd.lock" "xattr.conf" "ufw/" "cifs-utils/" "cron.weekly/" "skel/" "cron.d/" "profile.d/" "nsswitch.conf" "vdpau_wrapper.cfg" "bindresvport.blacklist" "services" "i3/" "audit/" "trusted-key.key" "gtk-3.0/" "dbus-1/" "mkinitcpio.d/" "ts.conf" "iproute2/" "ImageMagick-7/" "ld.so.cache" "wpa_supplicant/" "nfs.conf" "mke2fs.conf" "e2scrub.conf" "gss/" "libnl/" "request-key.d/" "mail.rc" "pacman.conf" "vimrc" "X11/" "mpv/" "shadow" "idmapd.conf" "sensors.d/" "gai.conf" "libaudit.conf" "gssproxy/" "docx2txt.config" "modprobe.d/" "vpnc/" "asound.conf" "manjaro-firefox-developer-edition.ini" "polkit-1/" "ssl/" "cron.hourly/" "php/" "acpi/" "netconfig" "adjtime" "localtime" "profile" "i3status.conf" ".updated" "mdadm.conf" "lsb-release" "ethertypes" "ld.so.conf.d/" "man_db.conf" "dhcpcd.conf" "gconf/" "binfmt.d/" "dnsmasq.conf" "group-" "sudoers" "resolvconf.conf" "dconf/" "slsh.rc" "cpufreq-bench.conf" "login.defs" "mpd.conf" "securetty" "openvpn/" "security/" "nfsmount.conf" "alsa/" "udev/" "syslog-ng/" "exports" "crypttab" "logrotate.d/" "manjaro-thunderbird.ini" "mime.types" "fonts/" "host.conf" "rc_keymaps/" "healthd.conf" "./" "ppp/" "inputrc")
-
- ("/home/" (23790 59527 959673 674000) "../" "jacob/" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

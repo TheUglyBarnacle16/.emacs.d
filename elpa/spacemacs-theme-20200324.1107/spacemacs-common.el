@@ -585,7 +585,7 @@ to 'auto, tags may not be properly aligned. "
      `(ivy-minibuffer-match-face-3 ((,class (:foreground ,head4 :underline t))))
      `(ivy-minibuffer-match-face-4 ((,class (:foreground ,head3 :underline t))))
      `(ivy-remote ((,class (:foreground ,cyan))))
-     
+
 ;;;;; ivy-posframe
      `(ivy-posframe ((,class (:background ,bg3))))
 
