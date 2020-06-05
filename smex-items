@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- shell
- irony-install-server
- make-directory
- minimize-window
- newsticker-show-news
  diminish
- list-directory
+ whitespace-cleanup
+ make-directory
+ dired
+ shell
+ minimize-window
+ org-clock-report
 )
 
 ;; ----- smex-data -----
@@ -15,31 +15,33 @@
  (symon-mode . 2)
  (list-packages . 4)
  (clipboard-yank . 1)
- (shell . 25)
- (dired . 4)
+ (shell . 45)
+ (dired . 5)
  (whitespace-mode . 3)
  (htmlize-file . 4)
  (dired-mark . 1)
  (load-file . 1)
  (ansi-term . 1)
- (minimize-window . 13)
+ (minimize-window . 22)
  (forward-sentence . 2)
  (backward-sentence . 1)
  (yas-expand . 8)
  (yas-minor-mode-on . 1)
  (yas-reload-all . 2)
- (yas-describe-tables . 9)
+ (yas-describe-tables . 10)
  (customize-themes . 8)
  (customize . 2)
- (whitespace-cleanup . 1)
+ (whitespace-cleanup . 47)
  (yas-minor-mode . 1)
- (yas-new-snippet . 3)
+ (yas-new-snippet . 5)
  (backward-page . 1)
  (describe-key . 1)
  (list-directory . 1)
- (diminish . 1)
+ (diminish . 4)
  (dired-insert-subdir . 1)
  (newsticker-show-news . 2)
- (make-directory . 1)
+ (make-directory . 9)
  (irony-install-server . 1)
+ (maximize-window . 2)
+ (org-clock-report . 1)
 )
