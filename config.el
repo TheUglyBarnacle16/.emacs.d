@@ -112,7 +112,7 @@
         (bury-buffer)
       ad-do-it)))
 
-(setq display-time-24hr-format t)
+(setq display-time-12hr-format t)
 (setq display-time-default-load-average nil)
 (display-time-mode 1)
 

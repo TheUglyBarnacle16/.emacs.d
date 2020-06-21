@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- diminish
- whitespace-cleanup
  make-directory
+ diminish
+ customize-themes
+ whitespace-cleanup
  dired
  shell
  minimize-window
- org-clock-report
 )
 
 ;; ----- smex-data -----
@@ -28,19 +28,19 @@
  (yas-expand . 8)
  (yas-minor-mode-on . 1)
  (yas-reload-all . 2)
- (yas-describe-tables . 10)
- (customize-themes . 8)
+ (yas-describe-tables . 11)
+ (customize-themes . 9)
  (customize . 2)
- (whitespace-cleanup . 47)
+ (whitespace-cleanup . 60)
  (yas-minor-mode . 1)
  (yas-new-snippet . 5)
  (backward-page . 1)
  (describe-key . 1)
  (list-directory . 1)
- (diminish . 4)
+ (diminish . 7)
  (dired-insert-subdir . 1)
  (newsticker-show-news . 2)
- (make-directory . 9)
+ (make-directory . 10)
  (irony-install-server . 1)
  (maximize-window . 2)
  (org-clock-report . 1)
