@@ -101,6 +101,49 @@
 
 (global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
 
+(use-package emms
+  :ensure t
+  :config
+    (require 'emms-setup)
+    (require 'emms-player-mpd)
+    (emms-all)
+    (setq emms-seek-seconds 5)
+    (setq emms-player-list '(emms-player-mpd))
+    (setq emms-info-functions '(emms-info-mpd))
+    (setq emms-player-mpd-server-name "localhost")
+    (setq emms-player-mpd-server-port "6601")
+  :bind
+    ("M-s-p" . emms)
+    ("M-s-b" . emms-smart-browse)
+    ("M-s-r" . emms-player-mpd-update-all-reset-cache))
+
+(setq mpc-host "localhost:6601")
+
+(defun mpd/start-music-daemon ()
+  "Start MPD, connects to it and syncs the metadata cache."
+  (interactive)
+  (shell-command "mpd")
+  (mpd/update-database)
+  (emms-player-mpd-connect)
+  (emms-cache-set-from-mpd-all)
+  (message "MPD Started!"))
+(global-set-key (kbd "M-s-c") 'mpd/start-music-daemon)
+
+(defun mpd/kill-music-daemon ()
+  "Stops playback and kills the music daemon."
+  (interactive)
+  (emms-stop)
+  (call-process "killall" nil nil nil "mpd")
+  (message "MPD Killed!"))
+(global-set-key (kbd "M-s-k") 'mpd/kill-music-daemon)
+
+(defun mpd/update-database ()
+  "Updates the MPD database synchronously."
+  (interactive)
+  (call-process "mpc" nil nil nil "update")
+  (message "MPD Database Updated!"))
+(global-set-key (kbd "M-s-u") 'mpd/update-database)
+
 (setq make-backup-file nil)
 (setq auto-save-default nil)
 
@@ -115,6 +158,9 @@
 (setq display-time-12hr-format t)
 (setq display-time-default-load-average nil)
 (display-time-mode 1)
+
+(defun insert-current-date () (interactive)
+  (insert (shell-command-to-string "echo -n $(date +%B\ %d,\ %Y)")))
 
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
@@ -211,8 +257,28 @@
   :init
   (beacon-mode 1))
 
+(use-package elfeed
+  :ensure t
+  :bind ("C-x w" . elfeed)
+  :init
+  (setq elfeed-feeds
+    '(("https://jacobmccormick.xyz/rss.xml" blog mine)
+      ("https://lukesmith.xyz/rss.xml" blog linux)
+      ("https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2" video linux)
+      ("https://www.distrotube.com/videos/index.xml" video linux)
+      ("https://christitus.com/index.xml" blog linux)
+      ("http://vault.lunduke.com/LundukeShowMP3.xml" blog linux))))
+
 (use-package free-keys
   :ensure t)
+
+;; enale use of gnuplot mode
+(autoload 'gnuplot-mode "gnupot" "gnuplot major mode" t)
+(autoload 'gnuplot-make-buffer "gnuplot" "open a buffer in gnuplot mode" t)
+;; auto enable gnuplot mode for .gp files
+(setq auto-mode-alist (append '(("\\.gp$" . gnuplot-mode)) auto-mode-alist))
+;; keyboard shortcut
+(global-set-key (kbd "C-M-g") 'org-plot/gnuplot)
 
 (use-package popup-kill-ring
   :ensure t

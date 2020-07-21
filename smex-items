@@ -1,27 +1,27 @@
 
 ;; ----- smex-history -----
 (
- make-directory
- diminish
- customize-themes
- whitespace-cleanup
- dired
+ list-packages
  shell
+ ansi-term
+ make-directory
+ whitespace-cleanup
  minimize-window
+ customize-themes
 )
 
 ;; ----- smex-data -----
 (
  (symon-mode . 2)
- (list-packages . 4)
+ (list-packages . 7)
  (clipboard-yank . 1)
- (shell . 45)
+ (shell . 49)
  (dired . 5)
  (whitespace-mode . 3)
  (htmlize-file . 4)
  (dired-mark . 1)
  (load-file . 1)
- (ansi-term . 1)
+ (ansi-term . 3)
  (minimize-window . 22)
  (forward-sentence . 2)
  (backward-sentence . 1)
@@ -44,4 +44,8 @@
  (irony-install-server . 1)
  (maximize-window . 2)
  (org-clock-report . 1)
+ (mu4e . 14)
+ (mu4e-view-toggle-html . 3)
+ (mu4e-news . 1)
+ (mu4e-org-mode . 1)
 )

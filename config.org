@@ -137,6 +137,62 @@
    #+BEGIN_SRC emacs-lisp
      (global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
    #+END_SRC
+* Media
+** Basic setup for mpd
+#+BEGIN_SRC emacs-lisp
+(use-package emms
+  :ensure t
+  :config
+    (require 'emms-setup)
+    (require 'emms-player-mpd)
+    (emms-all)
+    (setq emms-seek-seconds 5)
+    (setq emms-player-list '(emms-player-mpd))
+    (setq emms-info-functions '(emms-info-mpd))
+    (setq emms-player-mpd-server-name "localhost")
+    (setq emms-player-mpd-server-port "6601")
+  :bind
+    ("M-s-p" . emms)
+    ("M-s-b" . emms-smart-browse)
+    ("M-s-r" . emms-player-mpd-update-all-reset-cache))
+#+END_SRC
+** MPC Setup
+#+BEGIN_SRC emacs-lisp
+(setq mpc-host "localhost:6601")
+#+END_SRC
+** mpd fcns
+*** Starting the daemon from within emacs
+#+BEGIN_SRC emacs-lisp
+(defun mpd/start-music-daemon ()
+  "Start MPD, connects to it and syncs the metadata cache."
+  (interactive)
+  (shell-command "mpd")
+  (mpd/update-database)
+  (emms-player-mpd-connect)
+  (emms-cache-set-from-mpd-all)
+  (message "MPD Started!"))
+(global-set-key (kbd "M-s-c") 'mpd/start-music-daemon)
+#+END_SRC
+*** Killing the daemon from within emacs
+#+BEGIN_SRC emacs-lisp
+(defun mpd/kill-music-daemon ()
+  "Stops playback and kills the music daemon."
+  (interactive)
+  (emms-stop)
+  (call-process "killall" nil nil nil "mpd")
+  (message "MPD Killed!"))
+(global-set-key (kbd "M-s-k") 'mpd/kill-music-daemon)
+#+END_SRC
+*** Updating the database easiliy
+#+BEGIN_SRC emacs-lisp
+(defun mpd/update-database ()
+  "Updates the MPD database synchronously."
+  (interactive)
+  (call-process "mpc" nil nil nil "update")
+  (message "MPD Database Updated!"))
+(global-set-key (kbd "M-s-u") 'mpd/update-database)
+#+END_SRC
+
 * Minor Settings
 ** Backup/Auto-Save
    #+BEGIN_SRC emacs-lisp
@@ -161,6 +217,11 @@
    (setq display-time-default-load-average nil)
    (display-time-mode 1)
    #+END_SRC
+** Date fcn
+#+BEGIN_SRC emacs-lisp
+(defun insert-current-date () (interactive)
+  (insert (shell-command-to-string "echo -n $(date +%B\ %d,\ %Y)")))
+#+END_SRC
 ** Disable Splash/Welcome
    #+BEGIN_SRC emacs-lisp
      (setq inhibit-startup-message t)
@@ -314,11 +375,35 @@
     :init
     (beacon-mode 1))
   #+END_SRC
+** Elfeed
+#+BEGIN_SRC emacs-lisp
+(use-package elfeed
+  :ensure t
+  :bind ("C-x w" . elfeed)
+  :init
+  (setq elfeed-feeds
+    '(("https://jacobmccormick.xyz/rss.xml" blog mine)
+      ("https://lukesmith.xyz/rss.xml" blog linux)
+      ("https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2" video linux)
+      ("https://www.distrotube.com/videos/index.xml" video linux)
+      ("https://christitus.com/index.xml" blog linux)
+      ("http://vault.lunduke.com/LundukeShowMP3.xml" blog linux))))
+#+END_SRC
 ** Free-Key
    #+BEGIN_SRC emacs-lisp
      (use-package free-keys
        :ensure t)
    #+END_SRC
+** Gnuplot
+#+BEGIN_SRC emacs-lisp
+  ;; enale use of gnuplot mode
+  (autoload 'gnuplot-mode "gnupot" "gnuplot major mode" t)
+  (autoload 'gnuplot-make-buffer "gnuplot" "open a buffer in gnuplot mode" t)
+  ;; auto enable gnuplot mode for .gp files
+  (setq auto-mode-alist (append '(("\\.gp$" . gnuplot-mode)) auto-mode-alist))
+  ;; keyboard shortcut
+  (global-set-key (kbd "C-M-g") 'org-plot/gnuplot)
+#+END_SRC
 ** Popup-Kill-Ring
    #+BEGIN_SRC emacs-lisp
      (use-package popup-kill-ring
