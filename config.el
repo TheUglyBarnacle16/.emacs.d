@@ -337,3 +337,141 @@
   (diminish 'page-break-lines-mode)
   (diminish 'org-indent-mode)
   (diminish 'visual-line-mode))
+
+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/mu4e")
+
+(require 'mu4e)
+
+;; comment out for non-fancy utf characters
+(setq mu4e-use-fancy-chars 't)
+
+;; date format
+(setq mu4e-headers-date-format "%m-%d-%Y %H:%M")
+
+;; show full addresses in view message
+(setq mu4e-view-show-addresses 't)
+
+;; http://www.gnu.org/software/emacs/manual/html_node/gnus/Security.html
+(setq mml2015-use 'epg)
+
+;; the following is relative to 'mu4e-maildir'
+(setq mu4e-sent-folder   "/Sent"
+      mu4e-drafts-folder "/Drafts"
+      mu4e-trash-folder  "/Trash")
+
+;; the maildirs you use frequently; access them with 'j'
+(setq mu4e-maildir-shortcuts
+    '(("ship/INBOX/cur" . ?p)
+      ("school/INBOX/cur" . ?s)))
+
+;; html2text
+(setq mu4e-html2text-command "html2text")
+
+;; mu4e-action-view-in-browser is built into mu4e
+;; by adding it to these lists of custom actions
+;; it can be invoked by first pressing a, then selecting
+(add-to-list 'mu4e-headers-actions
+             '("in browser" . mu4e-action-view-in-browser) t)
+(add-to-list 'mu4e-view-actions
+             '("in browser" . mu4e-action-view-in-browser) t)
+
+;; the headers to show in the headers list -- a pair of a field
+;; and its width, with `nil' meaning 'unlimited'
+;; (better only use that for the last field.)
+;; These are the defaults:
+(setq mu4e-headers-fields
+    '( (:date     . 25)
+       (:flags    .  6)
+       (:from     . 22)
+       (:subject  . nil)))
+
+;; If you get your mail without an explicit command,
+;; use "true" for the command (this is the default)
+(setq mu4e-get-mail-command "offlineimap")
+
+;; setup default identity here:
+;; general emacs mail settings; used when composing e-mail
+;; the non-mu4e-* stuff is inherited from emacs/message-mode
+(setq user-mail-address "jacob@jacobmccormick.xyz"
+      user-full-name "Jacob McCormick")
+
+;; set this to nil so signature is not included by default
+;; you can include in message with C-c C-w
+(setq mu4e-compose-signature-auto-include 'nil)
+(setq mu4e-compose-signature (with-temp-buffer
+                               (insert-file-contents "~/.signature.personal")
+                               (buffer-string)))
+
+;; message-signature-file NOT used by mu4e
+(setq message-signature-file "~/signature.personal")
+
+;; functions for changing email identity
+(defun jm-mu4e-personal()
+  (interactive)
+  (message "personal mail account")
+  (setq user-mail-address "jacob@jacobmccormick.xyz"))
+
+(defun jm-mu4e-school()
+  (interactive)
+  (message "school mail account")
+  (setq user-mail-address "mccor571@d.umn.edu"))
+
+;; quickly change account
+(define-key mu4e-main-mode-map (kbd "<f1>") 'jm-mu4e-personal)
+(define-key mu4e-main-mode-map (kbd "<f2>") 'jm-mu4e-school)
+
+;; for sendmail read
+;; this http://www.gnus.org/manual/message_36.html
+;; am using nullmailer, so my mail sending just became STUPID fsat
+(setq message-send-mail-function 'message-send-mail-with-sendmail)
+
+;; don't keep message buffers around
+(setq message-kill-buffer-on-exit t)
+
+;; attachments go here
+(setq mu4e-attachment-dir "~/dl")
+
+;; when reply, use email that message was sent to
+(defun jm-mu4e-is-message-to (msg rx)
+  "Check if to, cc or bcc field in MSG has any address in RX."
+  (or (mu4e-message-contact-field-matches msg :to rx)
+      (mu4e-message-contact-field-matches msg :cc rx)
+      (mu4e-message-contact-field-matches msg :bcc rx)))
+
+(add-hook 'mu4e-compose-pre-hook
+          (defun my-set-from-address()
+            "Set current identity based on to, cc, bcc of original."
+            (let ((msg mu4e-compose-parent-message)) ;; msg is shorter...
+              (if msg
+                  (cond
+                   ((jm-mu4e-is-message-to msg "jacob@jacobmccormick.xyz")
+                    (jm-mu4e-personal))
+                   ((jm-mu4e-is-message-to msg "mccor571@d.umn.edu")
+                    (jm-mu4e-school)))))))
+
+;; convenience function for starting the whole mu4e in its own frame
+;; posted by the author of mu4e on the mailing list
+(defun mu4e-in-new-frame ()
+  "Start mu4e in new frame."
+  (interactive)
+  (select-frame (make-frame))
+  (mu4e))
+
+(use-package mu4e-alert
+  :ensure t
+  :after mu4e
+  :init
+  (setq mu4e-alert-interesting-mail-qeury
+    (concat
+     "flag:unread maildir:/Exchange/INBOX "
+     "OR "
+     "flag:unread maildir:/Gmail/INBOX"
+     ))
+  (mu4e-alert-enable-mode-line-display)
+  (defun gjstein-refresh-mu4e-alert-mode-line ()
+    (interactive)
+    (mu4e~proc-kill)
+    (mu4e-alert-enable-mode-line-display)
+    )
+  (run-with-timer 0 60 'gjstein-refresh-mu4e-alert-mode-line)
+  )
