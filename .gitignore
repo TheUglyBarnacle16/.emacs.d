@@ -1,0 +1,15 @@
+*.eld
+*.dat
+
+auto-save-list
+bookmarks
+config.el
+elpa
+emms
+irony
+.mbsyncrc
+recentf
+session*
+smex-items
+snippets
+tramp
