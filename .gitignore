@@ -1,6 +1,7 @@
 *.eld
 *.dat
 *ido*
+*~
 
 auto-save-list
 bookmarks
