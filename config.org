@@ -154,7 +154,11 @@
   :bind
     ("M-s-p" . emms)
     ("M-s-b" . emms-smart-browse)
-    ("M-s-r" . emms-player-mpd-update-all-reset-cache))
+    ("M-s-r" . emms-player-mpd-update-all-reset-cache)
+    ("M-s-<" . emms-previous)
+    ("M-s->" . emms-next)
+    ("M-s-." . emms-pause)
+    ("M-s-x" . emms-stop))
 #+END_SRC
 ** MPC Setup
 #+BEGIN_SRC emacs-lisp
@@ -263,6 +267,10 @@
    #+BEGIN_SRC emacs-lisp
      (global-subword-mode 1)
    #+END_SRC
+** TRAMP
+#+BEGIN_SRC emacs-lisp
+(setq tramp-default-method "ssh")
+#+END_SRC
 ** Whitespace
 *** Activate whitespace-mode key
     #+BEGIN_SRC emacs-lisp
