@@ -351,6 +351,11 @@
      (add-hook 'org-mode-hook 'org-indent-mode)
      (add-hook 'org-mode-hook '(lambda() (visual-line-mode 1)))
    #+END_SRC
+** Org MD Export
+#+BEGIN_SRC emacs-lisp
+(eval-after-load "org"
+  '(require 'ox-md nil t))
+#+END_SRC
 ** Prevent SRC Window
    #+BEGIN_SRC emacs-lisp
      (setq org-src-window-setup 'current-window)
@@ -393,9 +398,11 @@
     '(("https://jacobmccormick.xyz/rss.xml" blog mine)
       ("https://lukesmith.xyz/rss.xml" blog linux)
       ("https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2" video linux)
-      ("https://www.distrotube.com/videos/index.xml" video linux)
       ("https://christitus.com/index.xml" blog linux)
-      ("http://vault.lunduke.com/LundukeShowMP3.xml" blog linux))))
+      ("https://artixlinux.org/feed.php" linux))))
+(use-package elfeed-goodies)
+(elfeed-goodies/setup)
+;;(setq elfeed-goodies/entry-pane-size 0.5)
 #+END_SRC
 ** Free-Key
    #+BEGIN_SRC emacs-lisp
@@ -489,5 +496,29 @@
        (diminish 'yas-minor-mode)
        (diminish 'page-break-lines-mode)
        (diminish 'org-indent-mode)
-       (diminish 'visual-line-mode))
+       (diminish 'visual-line-mode)
+       (diminish 'flyspell-mode))
    #+END_SRC
+* Clang-format
+#+BEGIN_SRC emacs-lisp
+  (use-package clang-format
+  :ensure t)
+  ;; :init
+  (defun clang-format-save-hook-for-this-buffer ()
+    "Create a buffer local save hook."
+    (add-hook 'before-save-hook
+      (lambda ()
+        (progn
+          (when (locate-dominating-file "." ".clang-format")
+            (clang-format-buffer))
+          ;; Continue to save.
+          nil))
+      nil
+      ;; Buffer local hook.
+      t))
+
+  ;; Run this for each mode you want to use the hook.
+  (add-hook 'c-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
+  (add-hook 'c++-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
+  (add-hook 'glsl-mode-hook (lambda () (clang-format-save-hook-for-this-buffer)))
+#+END_SRC
