@@ -400,9 +400,6 @@
       ("https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2" video linux)
       ("https://christitus.com/index.xml" blog linux)
       ("https://artixlinux.org/feed.php" linux))))
-(use-package elfeed-goodies)
-(elfeed-goodies/setup)
-;;(setq elfeed-goodies/entry-pane-size 0.5)
 #+END_SRC
 ** Free-Key
    #+BEGIN_SRC emacs-lisp
